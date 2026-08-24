@@ -181,6 +181,26 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
+        {/* Subsidiary & Group Company Notice Banner */}
+        <div className="p-4 rounded-xl bg-[#080c16] border border-cyan-500/20 mb-6 flex flex-wrap items-center justify-between gap-4">
+          <div className="flex items-center gap-2.5 text-xs text-slate-300">
+            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse shrink-0" />
+            <span>
+              <strong className="text-white">Corporate Group Disclosure:</strong>{' '}
+              <a href="https://teenhusstle.com" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline font-semibold">
+                TeenHusstle (teenhusstle.com)
+              </a>{' '}
+              is a wholly-owned subsidiary brand & platform of Bloomverse Technologies Inc.
+            </span>
+          </div>
+          <Link
+            href="/legal"
+            className="text-xs text-cyan-400 hover:text-cyan-300 font-semibold bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-lg hover:border-slate-700 transition-colors"
+          >
+            Corporate Disclosures & Filings &rarr;
+          </Link>
+        </div>
+
         {/* Security & Compliance Banner */}
         <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 mb-10 flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-2.5 text-xs text-slate-300">
@@ -199,12 +219,12 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <div>
-            &copy; {new Date().getFullYear()} Bloomverse Technologies Inc. All rights reserved. Registered domain <span className="text-slate-300 font-mono">bloomverse.com</span>
+            &copy; {new Date().getFullYear()} Bloomverse Technologies Inc. All rights reserved. Registered domains: <span className="text-slate-300 font-mono">bloomverse.com</span> & <span className="text-cyan-400 font-mono">teenhusstle.com</span>
           </div>
           <div className="flex items-center gap-6">
-            <Link href="/contact" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/contact" className="hover:text-white transition-colors">Terms of Service</Link>
-            <Link href="/contact" className="hover:text-white transition-colors">Security Disclosures</Link>
+            <Link href="/legal" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/legal" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link href="/legal" className="hover:text-white transition-colors">Legal & Merchant Disclosures</Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import { AboutSection } from '@/components/about/AboutSection';
+import { GroupCompaniesSection } from '@/components/subsidiaries/GroupCompaniesSection';
 import { ProcessSection } from '@/components/process/ProcessSection';
 import { Sparkles, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
@@ -28,6 +29,9 @@ export default function AboutPage() {
 
       {/* About Section */}
       <AboutSection />
+
+      {/* Group Companies & Portfolio Ventures */}
+      <GroupCompaniesSection />
 
       {/* Process Section */}
       <ProcessSection />

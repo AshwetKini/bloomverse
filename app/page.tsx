@@ -9,6 +9,7 @@ import { ProcessSection } from '@/components/process/ProcessSection';
 import { EngagementModels } from '@/components/pricing/EngagementModels';
 import { TestimonialsSection } from '@/components/testimonials/TestimonialsSection';
 import { AboutSection } from '@/components/about/AboutSection';
+import { GroupCompaniesSection } from '@/components/subsidiaries/GroupCompaniesSection';
 import { ContactSection } from '@/components/contact/ContactSection';
 
 export default function HomePage() {
@@ -47,6 +48,9 @@ export default function HomePage() {
 
       {/* About & Executive Team */}
       <AboutSection />
+
+      {/* Group Companies & Subsidiary Portfolio */}
+      <GroupCompaniesSection />
 
       {/* Direct RFP & Contact Form */}
       <ContactSection />
