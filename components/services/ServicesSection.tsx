@@ -48,7 +48,7 @@ export const ServicesSection: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4 reveal-on-scroll">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5" /> Comprehensive IT Capabilities
           </div>
@@ -62,14 +62,14 @@ export const ServicesSection: React.FC = () => {
 
         {/* 6 Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {servicesData.map((service) => {
+          {servicesData.map((service, idx) => {
             const IconComponent = iconMap[service.iconName] || Cloud;
 
             return (
               <div
                 key={service.id}
                 id={service.id}
-                className="group relative rounded-2xl bg-white border border-slate-200/90 hover:border-blue-500/50 p-6 sm:p-7 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-slate-200/70 flex flex-col justify-between overflow-hidden"
+                className={`group relative rounded-2xl bg-white border border-slate-200/90 hover:border-blue-500/50 p-6 sm:p-7 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-slate-200/70 flex flex-col justify-between overflow-hidden hover-lift reveal-on-scroll delay-${(idx % 3) * 100 + 100}`}
               >
                 {/* Subtle top card accent line */}
                 <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${service.color} opacity-80 group-hover:opacity-100 transition-opacity`} />

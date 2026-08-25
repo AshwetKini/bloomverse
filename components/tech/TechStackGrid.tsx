@@ -163,9 +163,9 @@ export const TechStackGrid: React.FC = () => {
     <section id="tech-stack" className="py-24 bg-slate-50/60 relative overflow-hidden border-t border-slate-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
+        <div className="text-center max-w-3xl mx-auto mb-12 space-y-3 reveal-on-scroll">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5" /> Technical Architecture
+            <Cpu className="w-3.5 h-3.5" /> Architecture Radar
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
             Our Enterprise Technology Stack
@@ -176,7 +176,7 @@ export const TechStackGrid: React.FC = () => {
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex items-center justify-center gap-2 flex-wrap mb-10">
+        <div className="flex items-center justify-center gap-2 flex-wrap mb-10 reveal-on-scroll delay-100">
           <button
             onClick={() => setSelectedDomain('all')}
             className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all ${
@@ -204,12 +204,12 @@ export const TechStackGrid: React.FC = () => {
 
         {/* Domains Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {visibleDomains.map((domain) => {
+          {visibleDomains.map((domain, idx) => {
             const Icon = domain.icon;
             return (
               <div
                 key={domain.id}
-                className={`p-6 rounded-2xl bg-white border border-slate-200 ${domain.color.border} shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between`}
+                className={`p-6 rounded-2xl bg-white border border-slate-200 ${domain.color.border} shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between hover-lift reveal-on-scroll delay-${(idx % 3) * 100 + 100}`}
               >
                 <div>
                   {/* Domain Header */}

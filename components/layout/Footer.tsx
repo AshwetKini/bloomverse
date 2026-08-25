@@ -11,8 +11,7 @@ import {
   MapPin, 
   Github, 
   Twitter, 
-  Linkedin,
-  Terminal
+  Linkedin
 } from 'lucide-react';
 
 export const Footer: React.FC = () => {
@@ -82,10 +81,6 @@ export const Footer: React.FC = () => {
               <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-blue-600 transition-colors p-2 rounded-xl bg-white border border-slate-200 shadow-sm">
                 <Linkedin className="w-4 h-4" />
               </a>
-              <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white border border-slate-200 text-xs text-slate-600 shadow-sm">
-                <Terminal className="w-3.5 h-3.5 text-blue-600" />
-                <span className="font-mono text-[11px] font-medium">v3.2.0-prod</span>
-              </div>
             </div>
           </div>
 

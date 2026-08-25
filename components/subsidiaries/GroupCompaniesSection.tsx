@@ -23,13 +23,13 @@ export const GroupCompaniesSection: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 reveal-on-scroll">
           <div className="max-w-2xl space-y-3">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider">
-              <Building2 className="w-3.5 h-3.5" /> Corporate Ecosystem & Subsidiaries
+              <Building2 className="w-3.5 h-3.5" /> Corporate Ecosystem &amp; Subsidiaries
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-              Our Child Company & Consumer Venture
+              Our Child Company &amp; Consumer Venture
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
               Bloomverse incubates, architects, and powers high-growth digital platforms alongside our enterprise consulting division. TeenHusstle operates as our premier wholly-owned child company.
@@ -42,7 +42,7 @@ export const GroupCompaniesSection: React.FC = () => {
               className="inline-flex items-center gap-2 text-xs font-semibold text-slate-700 hover:text-blue-600 bg-white border border-slate-200 hover:border-slate-300 px-4 py-2.5 rounded-xl transition-all shadow-sm"
             >
               <ShieldCheck className="w-4 h-4 text-blue-600" />
-              <span>Corporate Structure & Legal Disclosures &rarr;</span>
+              <span>Corporate Structure &amp; Legal Disclosures &rarr;</span>
             </Link>
           </div>
         </div>
@@ -52,7 +52,7 @@ export const GroupCompaniesSection: React.FC = () => {
           {subsidiaryCompanies.map((company) => (
             <div
               key={company.id}
-              className="relative rounded-3xl bg-white border border-slate-200/90 hover:border-blue-300 p-8 sm:p-10 transition-all duration-300 shadow-lg shadow-slate-100 hover:shadow-xl hover:shadow-slate-200/60 overflow-hidden group"
+              className="relative rounded-3xl bg-white border border-slate-200/90 hover:border-blue-300 p-8 sm:p-10 transition-all duration-300 shadow-lg shadow-slate-100 hover:shadow-xl hover:shadow-slate-200/60 overflow-hidden group reveal-scale"
             >
               {/* Top Accent Gradient Line */}
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-indigo-600 to-pink-500" />
