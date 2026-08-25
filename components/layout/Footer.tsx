@@ -211,10 +211,11 @@ export const Footer: React.FC = () => {
           <div>
             &copy; {new Date().getFullYear()} Bloomverse Technologies Inc. All rights reserved. Registered domains: <span className="text-slate-800 font-mono font-medium">bloomverse.com</span> & <span className="text-blue-600 font-mono font-medium">teenhusstle.com</span>
           </div>
-          <div className="flex items-center gap-6">
-            <Link href="/legal" className="hover:text-slate-900 transition-colors">Privacy Policy</Link>
-            <Link href="/legal" className="hover:text-slate-900 transition-colors">Terms of Service</Link>
-            <Link href="/legal" className="hover:text-slate-900 transition-colors">Legal & Merchant Disclosures</Link>
+          <div className="flex flex-wrap items-center gap-4 sm:gap-6">
+            <Link href="/privacy" className="hover:text-slate-900 transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-slate-900 transition-colors">Terms of Service</Link>
+            <Link href="/merchant" className="hover:text-slate-900 transition-colors">Merchant Policy</Link>
+            <Link href="/legal" className="hover:text-slate-900 transition-colors">Legal &amp; Entity Filings</Link>
           </div>
         </div>
       </div>
