@@ -1,6 +1,5 @@
 import React from 'react';
 import { HeroSection } from '@/components/hero/HeroSection';
-import { ClientTicker } from '@/components/hero/ClientTicker';
 import { ServicesSection } from '@/components/services/ServicesSection';
 import { ProjectEstimator } from '@/components/calculator/ProjectEstimator';
 import { TechStackGrid } from '@/components/tech/TechStackGrid';
@@ -17,9 +16,6 @@ export default function HomePage() {
     <div className="w-full">
       {/* Hero Section */}
       <HeroSection />
-
-      {/* Enterprise Client Ticker */}
-      <ClientTicker />
 
       {/* 6 Core IT Services */}
       <ServicesSection />
