@@ -33,16 +33,16 @@ export default function ServicesPage() {
   ];
 
   return (
-    <div className="pt-24 pb-20 bg-[#07090e]">
+    <div className="pt-24 pb-20 bg-white">
       {/* Subpage Header Banner */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-4">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider mb-4">
           <Sparkles className="w-3.5 h-3.5" /> Full-Spectrum IT Capabilities
         </div>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight">
           Next-Generation IT Services & Applied AI
         </h1>
-        <p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto mt-4">
+        <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto mt-4">
           Architected for mission-critical enterprise resilience, sub-second latency, and measurable commercial ROI.
         </p>
       </div>
@@ -64,18 +64,18 @@ export default function ServicesPage() {
       {/* Enterprise Services FAQ */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white">Frequently Asked Questions</h2>
-          <p className="text-xs sm:text-sm text-slate-400 mt-1">Everything you need to know about our engagement & delivery process.</p>
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Frequently Asked Questions</h2>
+          <p className="text-xs sm:text-sm text-slate-600 mt-1">Everything you need to know about our engagement & delivery process.</p>
         </div>
 
         <div className="space-y-4">
           {faqs.map((faq, idx) => (
-            <div key={idx} className="p-5 rounded-2xl bg-slate-900/60 border border-slate-800">
-              <h3 className="text-sm font-bold text-white mb-2 flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0" />
+            <div key={idx} className="p-5 rounded-2xl bg-slate-50 border border-slate-200">
+              <h3 className="text-sm font-bold text-slate-900 mb-2 flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
                 <span>{faq.q}</span>
               </h3>
-              <p className="text-xs sm:text-sm text-slate-400 leading-relaxed pl-6">
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed pl-6">
                 {faq.a}
               </p>
             </div>
