@@ -2,7 +2,6 @@ import React from 'react';
 import { Metadata } from 'next';
 import { ServicesSection } from '@/components/services/ServicesSection';
 import { TechStackGrid } from '@/components/tech/TechStackGrid';
-import { ProcessSection } from '@/components/process/ProcessSection';
 import { ProjectEstimator } from '@/components/calculator/ProjectEstimator';
 import { Sparkles, HelpCircle, CheckCircle2, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
@@ -57,9 +56,6 @@ export default function ServicesPage() {
 
       {/* Tech Stack Matrix */}
       <TechStackGrid />
-
-      {/* Engineering Delivery Process */}
-      <ProcessSection />
 
       {/* Enterprise Services FAQ */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">

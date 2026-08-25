@@ -2,7 +2,6 @@ import React from 'react';
 import { Metadata } from 'next';
 import { AboutSection } from '@/components/about/AboutSection';
 import { GroupCompaniesSection } from '@/components/subsidiaries/GroupCompaniesSection';
-import { ProcessSection } from '@/components/process/ProcessSection';
 import { Sparkles, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
@@ -32,9 +31,6 @@ export default function AboutPage() {
 
       {/* Group Companies & Portfolio Ventures */}
       <GroupCompaniesSection />
-
-      {/* Process Section */}
-      <ProcessSection />
 
       {/* Bottom CTA */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 text-center">

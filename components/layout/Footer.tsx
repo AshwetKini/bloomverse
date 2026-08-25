@@ -145,16 +145,6 @@ export const Footer: React.FC = () => {
                   Technology Radar
                 </Link>
               </li>
-              <li>
-                <Link href="/#process" className="hover:text-blue-600 transition-colors">
-                  4-Phase Delivery Blueprint
-                </Link>
-              </li>
-              <li>
-                <Link href="/#pricing" className="hover:text-blue-600 transition-colors">
-                  Engagement Models
-                </Link>
-              </li>
             </ul>
           </div>
 

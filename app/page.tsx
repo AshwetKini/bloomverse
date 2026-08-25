@@ -4,8 +4,6 @@ import { ServicesSection } from '@/components/services/ServicesSection';
 import { ProjectEstimator } from '@/components/calculator/ProjectEstimator';
 import { TechStackGrid } from '@/components/tech/TechStackGrid';
 import { CaseStudiesSection } from '@/components/case-studies/CaseStudiesSection';
-import { ProcessSection } from '@/components/process/ProcessSection';
-import { EngagementModels } from '@/components/pricing/EngagementModels';
 import { TestimonialsSection } from '@/components/testimonials/TestimonialsSection';
 import { AboutSection } from '@/components/about/AboutSection';
 import { GroupCompaniesSection } from '@/components/subsidiaries/GroupCompaniesSection';
@@ -32,12 +30,6 @@ export default function HomePage() {
 
       {/* Real Enterprise Case Studies */}
       <CaseStudiesSection />
-
-      {/* 4-Phase Delivery Process Blueprint */}
-      <ProcessSection />
-
-      {/* Transparent Pricing & Engagement Models */}
-      <EngagementModels />
 
       {/* Testimonials & Security Trust Vault */}
       <TestimonialsSection />
