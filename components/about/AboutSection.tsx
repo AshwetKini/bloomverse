@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { companyValues, leadershipTeam, officeLocations } from '@/data/companyData';
+import { companyValues, officeLocations } from '@/data/companyData';
 import { 
   Sparkles, 
   ShieldCheck, 
@@ -39,7 +39,7 @@ export const AboutSection: React.FC = () => {
         </div>
 
         {/* Core Values Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {companyValues.map((val, idx) => {
             const Icon = valueIcons[val.icon] || ShieldCheck;
             return (
@@ -57,34 +57,6 @@ export const AboutSection: React.FC = () => {
               </div>
             );
           })}
-        </div>
-
-        {/* Leadership Team */}
-        <div className="mb-20">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">Executive Leadership</h3>
-            <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              Veteran distributed systems architects and machine learning researchers leading from the front.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {leadershipTeam.map((leader, idx) => (
-              <div
-                key={idx}
-                className="p-5 rounded-2xl bg-white border border-slate-200 text-center flex flex-col items-center hover:border-blue-300 hover:shadow-md transition-all shadow-sm"
-              >
-                <img
-                  src={leader.image}
-                  alt={leader.name}
-                  className="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-blue-500/20 shadow-sm"
-                />
-                <h4 className="text-sm font-bold text-slate-900">{leader.name}</h4>
-                <div className="text-xs text-blue-600 font-semibold mb-3">{leader.role}</div>
-                <p className="text-[11px] text-slate-600 leading-relaxed">{leader.bio}</p>
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* Global Delivery Hubs Showcase */}
