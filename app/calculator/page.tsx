@@ -1,8 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import { ProjectEstimator } from '@/components/calculator/ProjectEstimator';
-import { EngagementModels } from '@/components/pricing/EngagementModels';
-import { Sparkles, CheckCircle2, ShieldCheck } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Project Scope & Cost Estimator | Bloomverse',
@@ -29,9 +28,6 @@ export default function CalculatorPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <ProjectEstimator />
       </div>
-
-      {/* Engagement Models */}
-      <EngagementModels />
     </div>
   );
 }
