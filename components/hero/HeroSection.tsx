@@ -8,10 +8,7 @@ import {
   Activity, 
   Cpu, 
   Cloud, 
-  CheckCircle2, 
-  Zap,
-  Sparkles,
-  ShieldCheck
+  Zap
 } from 'lucide-react';
 import { ConsultationModal } from '../contact/ConsultationModal';
 
@@ -81,22 +78,6 @@ export const HeroSection: React.FC = () => {
                 <Calculator className="w-4 h-4 text-blue-600" />
                 <span>Estimate Project Scope</span>
               </Link>
-            </div>
-
-            {/* Micro Trust Indicators */}
-            <div className="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-500">
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                <span className="font-medium text-slate-700">SOC 2 Type II Certified</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-blue-600" />
-                <span className="font-medium text-slate-700">100% US & Global Tech Squads</span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-indigo-600" />
-                <span className="font-medium text-slate-700">Guaranteed 2-Week Sprint Velocity</span>
-              </div>
             </div>
           </div>
 
@@ -217,33 +198,6 @@ export const HeroSection: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Floating Quick Stats */}
-        <div className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-          <div className="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-all">
-            <div className="text-2xl sm:text-3xl font-extrabold text-slate-900">99.999%</div>
-            <div className="text-xs sm:text-sm text-blue-600 font-semibold">Uptime Guarantee</div>
-            <div className="text-[11px] text-slate-500 mt-1">Multi-cloud active-active failover</div>
-          </div>
-
-          <div className="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-all">
-            <div className="text-2xl sm:text-3xl font-extrabold text-slate-900">18x</div>
-            <div className="text-xs sm:text-sm text-indigo-600 font-semibold">Deployment Velocity</div>
-            <div className="text-[11px] text-slate-500 mt-1">Automated GitOps & CI/CD pipelines</div>
-          </div>
-
-          <div className="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-all">
-            <div className="text-2xl sm:text-3xl font-extrabold text-slate-900">45%+</div>
-            <div className="text-xs sm:text-sm text-emerald-600 font-semibold">Cloud FinOps Reduction</div>
-            <div className="text-[11px] text-slate-500 mt-1">Guaranteed cloud waste elimination</div>
-          </div>
-
-          <div className="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-all">
-            <div className="text-2xl sm:text-3xl font-extrabold text-slate-900">Top 1%</div>
-            <div className="text-xs sm:text-sm text-sky-600 font-semibold">Senior Tech Talent</div>
-            <div className="text-[11px] text-slate-500 mt-1">Silicon Valley & Global architects</div>
           </div>
         </div>
       </div>
