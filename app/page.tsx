@@ -25,7 +25,7 @@ export default function HomePage() {
       <ServicesSection />
 
       {/* Interactive Project Scope & Cost Estimator */}
-      <section className="py-20 bg-[#07090e] relative">
+      <section className="py-20 bg-slate-50/70 relative border-y border-slate-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ProjectEstimator />
         </div>

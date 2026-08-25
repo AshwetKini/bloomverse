@@ -66,20 +66,20 @@ export const TechStackGrid: React.FC = () => {
   });
 
   return (
-    <section id="tech-stack" className="py-24 bg-[#07090e] relative overflow-hidden">
+    <section id="tech-stack" className="py-24 bg-white relative overflow-hidden">
       {/* Background Aura */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-indigo-600/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-indigo-500/5 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-semibold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5" /> Modern Engineering Radar
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
             Battle-Tested Technology Ecosystem
           </h2>
-          <p className="text-slate-400 text-base sm:text-lg">
+          <p className="text-slate-600 text-base sm:text-lg">
             We build exclusively on industry-leading, high-concurrency frameworks, cloud native platforms, and state-of-the-art AI architectures.
           </p>
         </div>
@@ -94,8 +94,8 @@ export const TechStackGrid: React.FC = () => {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-3.5 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${
                   activeCategory === cat
-                    ? 'bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-md shadow-blue-500/20'
-                    : 'bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-slate-700'
+                    ? 'bg-gradient-to-r from-blue-600 to-sky-600 text-white shadow-sm shadow-blue-500/20'
+                    : 'bg-slate-100 border border-slate-200 text-slate-600 hover:text-slate-900 hover:bg-slate-200/70'
                 }`}
               >
                 {cat}
@@ -111,7 +111,7 @@ export const TechStackGrid: React.FC = () => {
               placeholder="Search stack (e.g. Next.js, AWS, Kafka)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-9 pr-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-cyan-500"
+              className="w-full pl-9 pr-4 py-2 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-xs focus:outline-none focus:border-blue-600 focus:bg-white focus:ring-1 focus:ring-blue-600 transition-all"
             />
           </div>
         </div>
@@ -123,30 +123,30 @@ export const TechStackGrid: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="group p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 hover:bg-slate-900/90 transition-all duration-300 flex flex-col justify-between"
+                className="group p-4 rounded-xl bg-white border border-slate-200/90 hover:border-blue-400 hover:shadow-md transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-3">
-                    <div className="p-2 rounded-lg bg-slate-800 border border-slate-700 text-cyan-400 group-hover:scale-110 transition-transform">
+                    <div className="p-2 rounded-lg bg-blue-50 border border-blue-100 text-blue-600 group-hover:scale-110 transition-transform">
                       <IconComponent className="w-4 h-4" />
                     </div>
                     {item.popular && (
-                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-500/15 text-blue-300 border border-blue-500/30">
+                      <span className="text-[10px] font-mono font-semibold px-2 py-0.5 rounded bg-blue-50 text-blue-700 border border-blue-200">
                         Tier-1 Core
                       </span>
                     )}
                   </div>
-                  <h4 className="text-sm font-bold text-white group-hover:text-cyan-300 transition-colors mb-1">
+                  <h4 className="text-sm font-bold text-slate-900 group-hover:text-blue-600 transition-colors mb-1">
                     {item.name}
                   </h4>
-                  <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed">
+                  <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed">
                     {item.description}
                   </p>
                 </div>
 
-                <div className="mt-3 pt-2.5 border-t border-slate-800/60 flex items-center justify-between text-[11px] text-slate-500">
+                <div className="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
                   <span>{item.category}</span>
-                  <span className="text-emerald-400 font-mono text-[10px]">Production-Ready</span>
+                  <span className="text-emerald-600 font-mono text-[10px] font-semibold">Production-Ready</span>
                 </div>
               </div>
             );
@@ -154,7 +154,7 @@ export const TechStackGrid: React.FC = () => {
         </div>
 
         {filteredTech.length === 0 && (
-          <div className="text-center py-12 text-slate-400 text-sm">
+          <div className="text-center py-12 text-slate-500 text-sm">
             No technologies found matching &ldquo;{searchQuery}&rdquo;. Try another search term or reset category filters.
           </div>
         )}
@@ -162,3 +162,4 @@ export const TechStackGrid: React.FC = () => {
     </section>
   );
 };
+

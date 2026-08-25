@@ -27,9 +27,9 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="relative bg-[#05070a] border-t border-slate-800/80 text-slate-400 text-sm overflow-hidden">
+    <footer className="relative bg-slate-50/80 border-t border-slate-200 text-slate-600 text-sm overflow-hidden">
       {/* Background Ambient Glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[200px] bg-gradient-to-b from-blue-600/10 via-cyan-500/5 to-transparent blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[200px] bg-gradient-to-b from-blue-500/5 via-sky-400/5 to-transparent blur-3xl pointer-events-none" />
 
       {/* Main Footer Container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 relative z-10">
@@ -37,18 +37,18 @@ export const Footer: React.FC = () => {
           {/* Brand & Newsletter Column */}
           <div className="lg:col-span-2 space-y-5">
             <BloomverseLogo showTagline={true} />
-            <p className="text-slate-400 text-sm max-w-sm leading-relaxed">
+            <p className="text-slate-600 text-sm max-w-sm leading-relaxed">
               Bloomverse is the premier digital engineering and enterprise cloud partner. We architect resilient systems, fine-tune AI foundation models, and deploy dedicated engineering squads worldwide.
             </p>
 
             {/* Newsletter Subscription */}
             <div className="pt-2">
-              <span className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+              <span className="block text-xs font-semibold text-slate-800 uppercase tracking-wider mb-2">
                 Subscribe to Engineering Radar
               </span>
               {subscribed ? (
-                <div className="flex items-center gap-2 text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-3.5 py-2 rounded-xl text-xs">
-                  <CheckCircle2 className="w-4 h-4" />
+                <div className="flex items-center gap-2 text-emerald-700 bg-emerald-50 border border-emerald-200 px-3.5 py-2 rounded-xl text-xs font-medium">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-600" />
                   <span>Subscribed! You will receive our monthly tech whitepapers.</span>
                 </div>
               ) : (
@@ -59,11 +59,11 @@ export const Footer: React.FC = () => {
                     placeholder="architect@enterprise.com"
                     value={newsletterEmail}
                     onChange={(e) => setNewsletterEmail(e.target.value)}
-                    className="flex-1 px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 text-xs focus:outline-none focus:border-cyan-500"
+                    className="flex-1 px-3.5 py-2.5 rounded-xl bg-white border border-slate-200 text-slate-900 placeholder-slate-400 text-xs focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 shadow-sm"
                   />
                   <button
                     type="submit"
-                    className="px-4 py-2.5 bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white text-xs font-semibold rounded-xl flex items-center gap-1.5 transition-all shadow-md shadow-blue-500/20"
+                    className="px-4 py-2.5 bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-700 hover:to-sky-700 text-white text-xs font-semibold rounded-xl flex items-center gap-1.5 transition-all shadow-sm active:scale-[0.98]"
                   >
                     <span>Join</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -72,54 +72,54 @@ export const Footer: React.FC = () => {
               )}
             </div>
 
-            <div className="flex items-center gap-4 text-slate-500 pt-2">
-              <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors p-2 rounded-lg bg-slate-900 border border-slate-800">
+            <div className="flex items-center gap-3 text-slate-500 pt-2">
+              <a href="https://github.com" target="_blank" rel="noreferrer" className="hover:text-slate-900 transition-colors p-2 rounded-xl bg-white border border-slate-200 shadow-sm">
                 <Github className="w-4 h-4" />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer" className="hover:text-cyan-400 transition-colors p-2 rounded-lg bg-slate-900 border border-slate-800">
+              <a href="https://twitter.com" target="_blank" rel="noreferrer" className="hover:text-sky-500 transition-colors p-2 rounded-xl bg-white border border-slate-200 shadow-sm">
                 <Twitter className="w-4 h-4" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-blue-400 transition-colors p-2 rounded-lg bg-slate-900 border border-slate-800">
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-blue-600 transition-colors p-2 rounded-xl bg-white border border-slate-200 shadow-sm">
                 <Linkedin className="w-4 h-4" />
               </a>
-              <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-400">
-                <Terminal className="w-3.5 h-3.5 text-cyan-400" />
-                <span className="font-mono text-[11px]">v3.2.0-prod</span>
+              <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white border border-slate-200 text-xs text-slate-600 shadow-sm">
+                <Terminal className="w-3.5 h-3.5 text-blue-600" />
+                <span className="font-mono text-[11px] font-medium">v3.2.0-prod</span>
               </div>
             </div>
           </div>
 
           {/* Solutions Column */}
           <div className="space-y-3">
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider">IT Services</h4>
+            <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">IT Services</h4>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <Link href="/services#cloud-devops" className="hover:text-cyan-400 transition-colors">
+                <Link href="/services#cloud-devops" className="hover:text-blue-600 transition-colors">
                   Cloud & Kubernetes
                 </Link>
               </li>
               <li>
-                <Link href="/services#applied-ai" className="hover:text-cyan-400 transition-colors">
+                <Link href="/services#applied-ai" className="hover:text-blue-600 transition-colors">
                   Applied AI & Agent Systems
                 </Link>
               </li>
               <li>
-                <Link href="/services#custom-software" className="hover:text-cyan-400 transition-colors">
+                <Link href="/services#custom-software" className="hover:text-blue-600 transition-colors">
                   Custom Software Dev
                 </Link>
               </li>
               <li>
-                <Link href="/services#cybersecurity" className="hover:text-cyan-400 transition-colors">
+                <Link href="/services#cybersecurity" className="hover:text-blue-600 transition-colors">
                   Zero-Trust Cybersecurity
                 </Link>
               </li>
               <li>
-                <Link href="/services#data-analytics" className="hover:text-cyan-400 transition-colors">
+                <Link href="/services#data-analytics" className="hover:text-blue-600 transition-colors">
                   Data Stack & Warehousing
                 </Link>
               </li>
               <li>
-                <Link href="/services#dedicated-pods" className="hover:text-cyan-400 transition-colors">
+                <Link href="/services#dedicated-pods" className="hover:text-blue-600 transition-colors">
                   Dedicated Agile Pods
                 </Link>
               </li>
@@ -128,30 +128,30 @@ export const Footer: React.FC = () => {
 
           {/* Engineering & Tools Column */}
           <div className="space-y-3">
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider">Solutions & Tools</h4>
+            <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">Solutions & Tools</h4>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <Link href="/calculator" className="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
-                  <span className="text-cyan-400">&bull;</span> Scope & Cost Calculator
+                <Link href="/calculator" className="hover:text-blue-600 transition-colors flex items-center gap-1.5">
+                  <span className="text-blue-600">&bull;</span> Scope & Cost Calculator
                 </Link>
               </li>
               <li>
-                <Link href="/case-studies" className="hover:text-cyan-400 transition-colors">
+                <Link href="/case-studies" className="hover:text-blue-600 transition-colors">
                   Enterprise Case Studies
                 </Link>
               </li>
               <li>
-                <Link href="/#tech-stack" className="hover:text-cyan-400 transition-colors">
+                <Link href="/#tech-stack" className="hover:text-blue-600 transition-colors">
                   Technology Radar
                 </Link>
               </li>
               <li>
-                <Link href="/#process" className="hover:text-cyan-400 transition-colors">
+                <Link href="/#process" className="hover:text-blue-600 transition-colors">
                   4-Phase Delivery Blueprint
                 </Link>
               </li>
               <li>
-                <Link href="/#pricing" className="hover:text-cyan-400 transition-colors">
+                <Link href="/#pricing" className="hover:text-blue-600 transition-colors">
                   Engagement Models
                 </Link>
               </li>
@@ -160,20 +160,20 @@ export const Footer: React.FC = () => {
 
           {/* Company & Offices Column */}
           <div className="space-y-3">
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider">Global Hubs</h4>
+            <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">Global Hubs</h4>
             <div className="space-y-3 text-xs">
               {officeLocations.slice(0, 2).map((loc) => (
-                <div key={loc.city} className="border-l-2 border-slate-800 pl-3">
-                  <div className="text-white font-medium flex items-center gap-1">
-                    <MapPin className="w-3 h-3 text-cyan-400" />
+                <div key={loc.city} className="border-l-2 border-slate-200 pl-3">
+                  <div className="text-slate-900 font-semibold flex items-center gap-1">
+                    <MapPin className="w-3 h-3 text-blue-600" />
                     <span>{loc.city}, {loc.country}</span>
-                    {loc.isHQ && <span className="text-[10px] bg-blue-500/20 text-blue-400 px-1 rounded">HQ</span>}
+                    {loc.isHQ && <span className="text-[10px] bg-blue-50 text-blue-700 border border-blue-200 px-1 rounded font-medium">HQ</span>}
                   </div>
-                  <div className="text-slate-400 text-[11px] mt-0.5">{loc.phone}</div>
+                  <div className="text-slate-500 text-[11px] mt-0.5">{loc.phone}</div>
                 </div>
               ))}
               <div className="pt-1">
-                <Link href="/contact" className="text-xs text-cyan-400 hover:text-cyan-300 font-medium">
+                <Link href="/contact" className="text-xs text-blue-600 hover:text-blue-700 font-semibold">
                   View Singapore & Bangalore Hubs &rarr;
                 </Link>
               </div>
@@ -182,12 +182,12 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Subsidiary & Group Company Notice Banner */}
-        <div className="p-4 rounded-xl bg-[#080c16] border border-cyan-500/20 mb-6 flex flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center gap-2.5 text-xs text-slate-300">
-            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse shrink-0" />
+        <div className="p-4 rounded-xl bg-blue-50/70 border border-blue-200/80 mb-6 flex flex-wrap items-center justify-between gap-4">
+          <div className="flex items-center gap-2.5 text-xs text-slate-700">
+            <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse shrink-0" />
             <span>
-              <strong className="text-white">Corporate Group Disclosure:</strong>{' '}
-              <a href="https://teenhusstle.com" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline font-semibold">
+              <strong className="text-slate-900">Corporate Group Disclosure:</strong>{' '}
+              <a href="https://teenhusstle.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold">
                 TeenHusstle (teenhusstle.com)
               </a>{' '}
               is a wholly-owned subsidiary brand & platform of Bloomverse Technologies Inc.
@@ -195,39 +195,40 @@ export const Footer: React.FC = () => {
           </div>
           <Link
             href="/legal"
-            className="text-xs text-cyan-400 hover:text-cyan-300 font-semibold bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-lg hover:border-slate-700 transition-colors"
+            className="text-xs text-blue-700 hover:text-blue-800 font-semibold bg-white border border-blue-200 px-3 py-1.5 rounded-lg hover:border-blue-300 transition-colors shadow-sm"
           >
             Corporate Disclosures & Filings &rarr;
           </Link>
         </div>
 
         {/* Security & Compliance Banner */}
-        <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 mb-10 flex flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center gap-2.5 text-xs text-slate-300">
-            <ShieldCheck className="w-5 h-5 text-emerald-400 shrink-0" />
+        <div className="p-4 rounded-xl bg-white border border-slate-200 mb-10 flex flex-wrap items-center justify-between gap-4 shadow-sm">
+          <div className="flex items-center gap-2.5 text-xs text-slate-700">
+            <ShieldCheck className="w-5 h-5 text-emerald-600 shrink-0" />
             <span>
-              <strong className="text-white">Enterprise Security Guarantee:</strong> All infrastructure and codebases are SOC2 Type II, ISO 27001, HIPAA & GDPR compliant.
+              <strong className="text-slate-900">Enterprise Security Guarantee:</strong> All infrastructure and codebases are SOC2 Type II, ISO 27001, HIPAA & GDPR compliant.
             </span>
           </div>
-          <div className="flex items-center gap-3 text-xs font-mono text-slate-400">
-            <span className="px-2 py-0.5 rounded bg-slate-800 border border-slate-700">SOC2 Type II</span>
-            <span className="px-2 py-0.5 rounded bg-slate-800 border border-slate-700">ISO 27001</span>
-            <span className="px-2 py-0.5 rounded bg-slate-800 border border-slate-700">HIPAA</span>
+          <div className="flex items-center gap-3 text-xs font-mono text-slate-600">
+            <span className="px-2 py-0.5 rounded bg-slate-100 border border-slate-200 font-medium">SOC2 Type II</span>
+            <span className="px-2 py-0.5 rounded bg-slate-100 border border-slate-200 font-medium">ISO 27001</span>
+            <span className="px-2 py-0.5 rounded bg-slate-100 border border-slate-200 font-medium">HIPAA</span>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div className="pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
-            &copy; {new Date().getFullYear()} Bloomverse Technologies Inc. All rights reserved. Registered domains: <span className="text-slate-300 font-mono">bloomverse.com</span> & <span className="text-cyan-400 font-mono">teenhusstle.com</span>
+            &copy; {new Date().getFullYear()} Bloomverse Technologies Inc. All rights reserved. Registered domains: <span className="text-slate-800 font-mono font-medium">bloomverse.com</span> & <span className="text-blue-600 font-mono font-medium">teenhusstle.com</span>
           </div>
           <div className="flex items-center gap-6">
-            <Link href="/legal" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/legal" className="hover:text-white transition-colors">Terms of Service</Link>
-            <Link href="/legal" className="hover:text-white transition-colors">Legal & Merchant Disclosures</Link>
+            <Link href="/legal" className="hover:text-slate-900 transition-colors">Privacy Policy</Link>
+            <Link href="/legal" className="hover:text-slate-900 transition-colors">Terms of Service</Link>
+            <Link href="/legal" className="hover:text-slate-900 transition-colors">Legal & Merchant Disclosures</Link>
           </div>
         </div>
       </div>
     </footer>
   );
 };
+

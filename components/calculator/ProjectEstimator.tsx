@@ -60,19 +60,19 @@ export const ProjectEstimator: React.FC = () => {
   const teamSize = selectedServices.length > 2 || scaleId === 'enterprise' ? '4 - 6 Dedicated Engineers' : '2 - 3 Senior Engineers';
 
   return (
-    <div className="w-full rounded-3xl bg-[#0b0f19] border border-slate-800 shadow-2xl shadow-blue-500/5 p-6 sm:p-8 lg:p-10 relative overflow-hidden">
-      {/* Glow Effects */}
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-gradient-to-bl from-blue-600/10 via-cyan-500/5 to-transparent blur-3xl pointer-events-none" />
+    <div className="w-full rounded-3xl bg-white border border-slate-200 shadow-xl shadow-slate-200/60 p-6 sm:p-8 lg:p-10 relative overflow-hidden">
+      {/* Background Radiance */}
+      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-gradient-to-bl from-blue-500/10 via-sky-400/5 to-transparent blur-3xl pointer-events-none" />
 
       {/* Header */}
       <div className="mb-8 text-center sm:text-left">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-2">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider mb-2">
           <Calculator className="w-3.5 h-3.5" /> Interactive IT Solution & Scope Calculator
         </div>
-        <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+        <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
           Calculate Your Project Investment & Timeline
         </h3>
-        <p className="text-slate-400 text-sm mt-1">
+        <p className="text-slate-600 text-sm mt-1">
           Select your required technology modules to generate an instant estimate with team allocation.
         </p>
       </div>
@@ -82,10 +82,10 @@ export const ProjectEstimator: React.FC = () => {
         <div className="lg:col-span-7 space-y-6">
           {/* Step 1: Select Services */}
           <div>
-            <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-3 flex items-center justify-between">
+            <div className="text-xs font-bold text-slate-700 uppercase tracking-wider mb-3 flex items-center justify-between">
               <span>1. Choose Technology Modules ({selectedServices.length} Selected)</span>
-              <span className="text-[11px] text-cyan-400 font-normal">Multi-select enabled</span>
-            </label>
+              <span className="text-[11px] text-blue-600 font-semibold">Multi-select enabled</span>
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               {serviceScopeOptions.map((opt) => {
                 const isSelected = selectedServices.includes(opt.id);
@@ -96,17 +96,17 @@ export const ProjectEstimator: React.FC = () => {
                     onClick={() => toggleService(opt.id)}
                     className={`p-3.5 rounded-xl border text-left transition-all relative ${
                       isSelected
-                        ? 'border-cyan-500 bg-cyan-500/10 text-white shadow-md shadow-cyan-500/10'
-                        : 'border-slate-800 bg-slate-900/60 text-slate-400 hover:border-slate-700 hover:text-slate-200'
+                        ? 'border-blue-600 bg-blue-50/70 text-slate-900 shadow-sm shadow-blue-500/10'
+                        : 'border-slate-200 bg-slate-50/50 text-slate-600 hover:border-slate-300 hover:bg-white hover:text-slate-900'
                     }`}
                   >
                     <div className="flex items-center justify-between mb-1">
-                      <span className="font-semibold text-xs text-white">{opt.name}</span>
-                      <div className={`w-4 h-4 rounded flex items-center justify-center border ${isSelected ? 'bg-cyan-500 border-cyan-400 text-black' : 'border-slate-700'}`}>
+                      <span className="font-semibold text-xs text-slate-900">{opt.name}</span>
+                      <div className={`w-4 h-4 rounded flex items-center justify-center border ${isSelected ? 'bg-blue-600 border-blue-600 text-white' : 'border-slate-300 bg-white'}`}>
                         {isSelected && <Check className="w-3 h-3 stroke-[3]" />}
                       </div>
                     </div>
-                    <p className="text-[11px] text-slate-400 line-clamp-1">{opt.description}</p>
+                    <p className="text-[11px] text-slate-500 line-clamp-1">{opt.description}</p>
                   </button>
                 );
               })}
@@ -115,7 +115,7 @@ export const ProjectEstimator: React.FC = () => {
 
           {/* Step 2: Scale & Maturity */}
           <div>
-            <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-3">
+            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-3">
               2. Target Scale & Complexity
             </label>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
@@ -126,12 +126,12 @@ export const ProjectEstimator: React.FC = () => {
                   onClick={() => setScaleId(scale.id)}
                   className={`p-3 rounded-xl border text-left transition-all ${
                     scaleId === scale.id
-                      ? 'border-blue-500 bg-blue-500/15 text-white font-semibold'
-                      : 'border-slate-800 bg-slate-900/60 text-slate-400 hover:border-slate-700'
+                      ? 'border-blue-600 bg-blue-50/90 text-blue-950 font-semibold shadow-sm'
+                      : 'border-slate-200 bg-slate-50/50 text-slate-600 hover:border-slate-300 hover:bg-white'
                   }`}
                 >
-                  <div className="text-xs text-white font-medium mb-0.5">{scale.name}</div>
-                  <div className="text-[10px] text-slate-400">{scale.desc}</div>
+                  <div className="text-xs text-slate-900 font-semibold mb-0.5">{scale.name}</div>
+                  <div className="text-[10px] text-slate-500">{scale.desc}</div>
                 </button>
               ))}
             </div>
@@ -139,7 +139,7 @@ export const ProjectEstimator: React.FC = () => {
 
           {/* Step 3: Velocity & Speed */}
           <div>
-            <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-3">
+            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-3">
               3. Delivery Velocity
             </label>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
@@ -150,12 +150,12 @@ export const ProjectEstimator: React.FC = () => {
                   onClick={() => setSpeedId(spd.id)}
                   className={`p-3 rounded-xl border text-left transition-all ${
                     speedId === spd.id
-                      ? 'border-indigo-500 bg-indigo-500/15 text-white font-semibold'
-                      : 'border-slate-800 bg-slate-900/60 text-slate-400 hover:border-slate-700'
+                      ? 'border-indigo-600 bg-indigo-50/90 text-indigo-950 font-semibold shadow-sm'
+                      : 'border-slate-200 bg-slate-50/50 text-slate-600 hover:border-slate-300 hover:bg-white'
                   }`}
                 >
-                  <div className="text-xs text-white font-medium mb-0.5">{spd.name}</div>
-                  <div className="text-[10px] text-slate-400">{spd.desc}</div>
+                  <div className="text-xs text-slate-900 font-semibold mb-0.5">{spd.name}</div>
+                  <div className="text-[10px] text-slate-500">{spd.desc}</div>
                 </button>
               ))}
             </div>
@@ -163,36 +163,36 @@ export const ProjectEstimator: React.FC = () => {
 
           {/* Step 4: Enterprise Add-ons */}
           <div>
-            <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
+            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
               4. Enterprise Assurance Packs
             </label>
             <div className="space-y-2">
-              <label className="flex items-center justify-between p-3 rounded-xl bg-slate-900/50 border border-slate-800 cursor-pointer hover:border-slate-700">
+              <label className="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:border-slate-300 transition-colors">
                 <div className="flex items-center gap-2.5">
                   <input
                     type="checkbox"
                     checked={include24x7Support}
                     onChange={(e) => setInclude24x7Support(e.target.checked)}
-                    className="w-4 h-4 rounded text-cyan-500 focus:ring-0 bg-slate-800 border-slate-700"
+                    className="w-4 h-4 rounded text-blue-600 focus:ring-0 border-slate-300"
                   />
                   <div>
-                    <div className="text-xs font-medium text-white">24/7 SRE Monitoring & Incident Response (+ $3.5k)</div>
-                    <div className="text-[11px] text-slate-400">15-minute SLA response time with Datadog/PagerDuty</div>
+                    <div className="text-xs font-semibold text-slate-900">24/7 SRE Monitoring & Incident Response (+ $3.5k)</div>
+                    <div className="text-[11px] text-slate-500">15-minute SLA response time with Datadog/PagerDuty</div>
                   </div>
                 </div>
               </label>
 
-              <label className="flex items-center justify-between p-3 rounded-xl bg-slate-900/50 border border-slate-800 cursor-pointer hover:border-slate-700">
+              <label className="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer hover:border-slate-300 transition-colors">
                 <div className="flex items-center gap-2.5">
                   <input
                     type="checkbox"
                     checked={includeSoc2Pack}
                     onChange={(e) => setIncludeSoc2Pack(e.target.checked)}
-                    className="w-4 h-4 rounded text-cyan-500 focus:ring-0 bg-slate-800 border-slate-700"
+                    className="w-4 h-4 rounded text-blue-600 focus:ring-0 border-slate-300"
                   />
                   <div>
-                    <div className="text-xs font-medium text-white">SOC 2 Type II & Security Audit Pack (+ $6k)</div>
-                    <div className="text-[11px] text-slate-400">Threat modeling, SAST/DAST gating & evidence binder</div>
+                    <div className="text-xs font-semibold text-slate-900">SOC 2 Type II & Security Audit Pack (+ $6k)</div>
+                    <div className="text-[11px] text-slate-500">Threat modeling, SAST/DAST gating & evidence binder</div>
                   </div>
                 </div>
               </label>
@@ -202,10 +202,10 @@ export const ProjectEstimator: React.FC = () => {
 
         {/* Right Output Card (5 cols) */}
         <div className="lg:col-span-5">
-          <div className="sticky top-28 rounded-2xl bg-gradient-to-b from-[#111726] to-[#0d121f] border border-slate-700/80 p-6 sm:p-7 shadow-xl space-y-6">
-            <div className="flex items-center justify-between pb-4 border-b border-slate-800">
+          <div className="sticky top-28 rounded-2xl bg-gradient-to-b from-[#0f172a] to-[#1e293b] text-white p-6 sm:p-7 shadow-xl space-y-6">
+            <div className="flex items-center justify-between pb-4 border-b border-slate-700/80">
               <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">Calculated Scope</span>
-              <span className="text-xs font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+              <span className="text-xs font-mono px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 font-semibold">
                 Instant Estimate
               </span>
             </div>
@@ -223,24 +223,24 @@ export const ProjectEstimator: React.FC = () => {
 
             {/* Scope Details */}
             <div className="space-y-3 pt-2">
-              <div className="flex items-center justify-between p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-xs">
-                <span className="text-slate-400 flex items-center gap-1.5">
-                  <Clock className="w-4 h-4 text-cyan-400" />
+              <div className="flex items-center justify-between p-3 rounded-xl bg-slate-800/80 border border-slate-700 text-xs">
+                <span className="text-slate-300 flex items-center gap-1.5">
+                  <Clock className="w-4 h-4 text-sky-400" />
                   Estimated Delivery Timeline:
                 </span>
                 <span className="text-white font-bold font-mono">{calculatedWeeks} &ndash; {calculatedWeeks + 2} Weeks</span>
               </div>
 
-              <div className="flex items-center justify-between p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-xs">
-                <span className="text-slate-400 flex items-center gap-1.5">
+              <div className="flex items-center justify-between p-3 rounded-xl bg-slate-800/80 border border-slate-700 text-xs">
+                <span className="text-slate-300 flex items-center gap-1.5">
                   <Users className="w-4 h-4 text-blue-400" />
                   Allocated Squad:
                 </span>
                 <span className="text-white font-bold font-mono">{teamSize}</span>
               </div>
 
-              <div className="flex items-center justify-between p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-xs">
-                <span className="text-slate-400 flex items-center gap-1.5">
+              <div className="flex items-center justify-between p-3 rounded-xl bg-slate-800/80 border border-slate-700 text-xs">
+                <span className="text-slate-300 flex items-center gap-1.5">
                   <ShieldCheck className="w-4 h-4 text-emerald-400" />
                   Warranty & SLA:
                 </span>
@@ -251,15 +251,15 @@ export const ProjectEstimator: React.FC = () => {
             {/* What's included checklist */}
             <div className="text-xs space-y-2 text-slate-300 pt-1">
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                <CheckCircle2 className="w-3.5 h-3.5 text-sky-400 shrink-0" />
                 <span>Full Intellectual Property & Source Code Ownership</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                <CheckCircle2 className="w-3.5 h-3.5 text-sky-400 shrink-0" />
                 <span>Automated CI/CD & Infrastructure as Code</span>
               </div>
               <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                <CheckCircle2 className="w-3.5 h-3.5 text-sky-400 shrink-0" />
                 <span>Weekly sprint demos & direct Slack/Jira access</span>
               </div>
             </div>
@@ -269,7 +269,7 @@ export const ProjectEstimator: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setModalOpen(true)}
-                className="w-full py-3.5 bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white font-semibold rounded-xl text-sm transition-all shadow-lg shadow-blue-500/25 flex items-center justify-center gap-2"
+                className="w-full py-3.5 bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-600 hover:from-blue-700 hover:to-sky-700 text-white font-semibold rounded-xl text-sm transition-all shadow-lg shadow-blue-500/25 flex items-center justify-center gap-2 active:scale-[0.98]"
               >
                 <span>Lock In Estimate & Book Architecture Call</span>
                 <ArrowRight className="w-4 h-4" />
@@ -287,3 +287,4 @@ export const ProjectEstimator: React.FC = () => {
     </div>
   );
 };
+

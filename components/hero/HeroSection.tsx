@@ -9,7 +9,9 @@ import {
   Cpu, 
   Cloud, 
   CheckCircle2, 
-  Zap 
+  Zap,
+  Sparkles,
+  ShieldCheck
 } from 'lucide-react';
 import { ConsultationModal } from '../contact/ConsultationModal';
 
@@ -18,17 +20,17 @@ export const HeroSection: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <section className="relative min-h-[92vh] flex flex-col justify-center pt-28 pb-16 overflow-hidden bg-[#07090e]">
+    <section className="relative min-h-[90vh] flex flex-col justify-center pt-28 pb-16 overflow-hidden bg-white">
       {/* Dynamic Background Radiance */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[600px] pointer-events-none">
-        <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-blue-600/20 rounded-full blur-[120px]" />
-        <div className="absolute top-20 right-10 w-[400px] h-[300px] bg-cyan-500/15 rounded-full blur-[100px]" />
-        <div className="absolute top-32 left-10 w-[450px] h-[320px] bg-indigo-600/15 rounded-full blur-[110px]" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[650px] pointer-events-none">
+        <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[650px] h-[350px] bg-blue-500/10 rounded-full blur-[140px]" />
+        <div className="absolute top-20 right-10 w-[450px] h-[320px] bg-sky-400/10 rounded-full blur-[120px]" />
+        <div className="absolute top-32 left-10 w-[500px] h-[340px] bg-indigo-500/10 rounded-full blur-[130px]" />
       </div>
 
       {/* Grid Pattern Overlay */}
       <div 
-        className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" 
+        className="absolute inset-0 opacity-[0.035] pointer-events-none bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:3.5rem_3.5rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" 
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
@@ -36,37 +38,37 @@ export const HeroSection: React.FC = () => {
           {/* Left Hero Content */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             {/* Live Status Badge */}
-            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-cyan-500/30 text-xs font-medium text-slate-200 shadow-lg shadow-cyan-500/10 backdrop-blur-md">
+            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-blue-50/90 border border-blue-200/80 text-xs font-medium text-slate-700 shadow-sm backdrop-blur-md">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
               </span>
-              <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-300 bg-clip-text text-transparent font-semibold">
+              <span className="text-blue-700 font-semibold">
                 Enterprise Cloud, DevOps & Applied AI Systems
               </span>
-              <span className="text-slate-500 hidden sm:inline">&bull;</span>
-              <span className="text-slate-400 hidden sm:inline">bloomverse.com</span>
+              <span className="text-slate-300 hidden sm:inline">&bull;</span>
+              <span className="text-slate-500 font-mono hidden sm:inline">bloomverse.com</span>
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.1]">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1]">
               Architecting the Future of{' '}
-              <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-emerald-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-600 bg-clip-text text-transparent">
                 Enterprise IT
               </span>{' '}
               & Autonomous Intelligence.
             </h1>
 
             {/* Subtitle */}
-            <p className="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed mx-auto lg:mx-0">
+            <p className="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed mx-auto lg:mx-0">
               Bloomverse provides end-to-end cloud infrastructure, autonomous AI agents, bespoke software engineering, and zero-trust cybersecurity for organizations demanding non-negotiable speed and 99.999% reliability.
             </p>
 
             {/* Action Buttons */}
-            <div className="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <div className="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5">
               <button
                 onClick={() => setModalOpen(true)}
-                className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white font-semibold text-sm transition-all shadow-xl shadow-blue-500/25 flex items-center justify-center gap-2 group"
+                className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-sky-600 hover:from-blue-700 hover:to-sky-700 text-white font-semibold text-sm transition-all shadow-md shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/30 flex items-center justify-center gap-2 group active:scale-[0.98]"
               >
                 <span>Schedule Free Architecture Audit</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -74,54 +76,54 @@ export const HeroSection: React.FC = () => {
 
               <Link
                 href="/calculator"
-                className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 hover:border-cyan-500/50 text-slate-200 hover:text-white font-semibold text-sm transition-all flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 hover:text-slate-900 font-semibold text-sm transition-all shadow-sm hover:shadow flex items-center justify-center gap-2"
               >
-                <Calculator className="w-4 h-4 text-cyan-400" />
+                <Calculator className="w-4 h-4 text-blue-600" />
                 <span>Estimate Project Scope</span>
               </Link>
             </div>
 
             {/* Micro Trust Indicators */}
-            <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-400">
+            <div className="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-500">
               <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                <span>SOC 2 Type II Certified</span>
+                <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                <span className="font-medium text-slate-700">SOC 2 Type II Certified</span>
               </div>
               <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-cyan-400" />
-                <span>100% US & Global Tech Squads</span>
+                <CheckCircle2 className="w-4 h-4 text-blue-600" />
+                <span className="font-medium text-slate-700">100% US & Global Tech Squads</span>
               </div>
               <div className="flex items-center gap-1.5">
-                <CheckCircle2 className="w-4 h-4 text-blue-400" />
-                <span>Guaranteed 2-Week Sprint Velocity</span>
+                <CheckCircle2 className="w-4 h-4 text-indigo-600" />
+                <span className="font-medium text-slate-700">Guaranteed 2-Week Sprint Velocity</span>
               </div>
             </div>
           </div>
 
           {/* Right Hero Interactive Tech Console */}
           <div className="lg:col-span-5">
-            <div className="relative rounded-2xl bg-[#0d121f]/90 border border-slate-800 shadow-2xl shadow-blue-600/10 backdrop-blur-xl overflow-hidden">
+            <div className="relative rounded-2xl bg-[#0f172a] border border-slate-800 shadow-2xl shadow-slate-400/20 overflow-hidden">
               {/* Window Titlebar */}
-              <div className="flex items-center justify-between px-4 py-3 border-b border-slate-800 bg-[#090d17]">
+              <div className="flex items-center justify-between px-4 py-3 border-b border-slate-800 bg-[#090d16]">
                 <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-rose-500/80" />
-                  <div className="w-3 h-3 rounded-full bg-amber-500/80" />
-                  <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
+                  <div className="w-3 h-3 rounded-full bg-rose-500" />
+                  <div className="w-3 h-3 rounded-full bg-amber-500" />
+                  <div className="w-3 h-3 rounded-full bg-emerald-500" />
                   <span className="text-xs text-slate-400 font-mono ml-2">bloomverse-core-engine</span>
                 </div>
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                  <span className="text-[11px] font-mono text-emerald-400">ONLINE</span>
+                  <span className="text-[11px] font-mono text-emerald-400 font-semibold">ONLINE</span>
                 </div>
               </div>
 
               {/* Console Tabs */}
-              <div className="flex border-b border-slate-800/80 bg-slate-900/50 text-xs font-mono">
+              <div className="flex border-b border-slate-800 bg-slate-900/80 text-xs font-mono">
                 <button
                   onClick={() => setActiveTab('metrics')}
                   className={`flex-1 py-2.5 px-3 flex items-center justify-center gap-1.5 transition-colors ${
                     activeTab === 'metrics'
-                      ? 'text-cyan-400 border-b-2 border-cyan-400 bg-slate-800/40 font-semibold'
+                      ? 'text-sky-400 border-b-2 border-sky-400 bg-slate-800/60 font-semibold'
                       : 'text-slate-400 hover:text-slate-200'
                   }`}
                 >
@@ -132,7 +134,7 @@ export const HeroSection: React.FC = () => {
                   onClick={() => setActiveTab('cloud')}
                   className={`flex-1 py-2.5 px-3 flex items-center justify-center gap-1.5 transition-colors ${
                     activeTab === 'cloud'
-                      ? 'text-blue-400 border-b-2 border-blue-400 bg-slate-800/40 font-semibold'
+                      ? 'text-blue-400 border-b-2 border-blue-400 bg-slate-800/60 font-semibold'
                       : 'text-slate-400 hover:text-slate-200'
                   }`}
                 >
@@ -143,7 +145,7 @@ export const HeroSection: React.FC = () => {
                   onClick={() => setActiveTab('ai')}
                   className={`flex-1 py-2.5 px-3 flex items-center justify-center gap-1.5 transition-colors ${
                     activeTab === 'ai'
-                      ? 'text-purple-400 border-b-2 border-purple-400 bg-slate-800/40 font-semibold'
+                      ? 'text-purple-400 border-b-2 border-purple-400 bg-slate-800/60 font-semibold'
                       : 'text-slate-400 hover:text-slate-200'
                   }`}
                 >
@@ -153,22 +155,22 @@ export const HeroSection: React.FC = () => {
               </div>
 
               {/* Console Body */}
-              <div className="p-5 font-mono text-xs space-y-4 min-h-[280px]">
+              <div className="p-5 font-mono text-xs space-y-4 min-h-[270px]">
                 {activeTab === 'metrics' && (
-                  <div className="space-y-3.5">
-                    <div className="flex justify-between items-center bg-slate-900/80 p-2.5 rounded-xl border border-slate-800">
+                  <div className="space-y-3">
+                    <div className="flex justify-between items-center bg-slate-900/90 p-2.5 rounded-xl border border-slate-800">
                       <span className="text-slate-400">Global Cluster Latency</span>
-                      <span className="text-cyan-400 font-bold text-sm">18.4ms (p99)</span>
+                      <span className="text-sky-400 font-bold text-sm">18.4ms (p99)</span>
                     </div>
-                    <div className="flex justify-between items-center bg-slate-900/80 p-2.5 rounded-xl border border-slate-800">
+                    <div className="flex justify-between items-center bg-slate-900/90 p-2.5 rounded-xl border border-slate-800">
                       <span className="text-slate-400">Multi-Region Uptime SLA</span>
                       <span className="text-emerald-400 font-bold text-sm">99.999% Verified</span>
                     </div>
-                    <div className="flex justify-between items-center bg-slate-900/80 p-2.5 rounded-xl border border-slate-800">
+                    <div className="flex justify-between items-center bg-slate-900/90 p-2.5 rounded-xl border border-slate-800">
                       <span className="text-slate-400">Enterprise Cloud Cost Savings</span>
                       <span className="text-indigo-400 font-bold text-sm">$42,000,000+</span>
                     </div>
-                    <div className="flex justify-between items-center bg-slate-900/80 p-2.5 rounded-xl border border-slate-800">
+                    <div className="flex justify-between items-center bg-slate-900/90 p-2.5 rounded-xl border border-slate-800">
                       <span className="text-slate-400">SOC2 & ISO 27001 Posture</span>
                       <span className="text-emerald-400 font-bold text-sm">100% Compliant</span>
                     </div>
@@ -200,18 +202,18 @@ export const HeroSection: React.FC = () => {
                       <div>&bull; Tool execution: automated SQL synthesis &amp; execution</div>
                     </div>
                     <div className="p-2 rounded bg-purple-500/10 border border-purple-500/20 text-purple-300 text-[11px]">
-                      [AGENT COMPLETED] Synthesized 2,400 medical records in 1.1s
+                      [AGENT COMPLETED] Synthesized 2,400 enterprise records in 1.1s
                     </div>
                   </div>
                 )}
 
                 {/* Footer bar inside console */}
-                <div className="pt-2 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-slate-400">
+                <div className="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px] text-slate-400">
                   <span className="flex items-center gap-1.5">
                     <Zap className="w-3.5 h-3.5 text-amber-400" />
                     Autonomous SRE Active
                   </span>
-                  <span className="text-cyan-400">Ready for Migration &rarr;</span>
+                  <span className="text-sky-400 font-medium">Ready for Migration &rarr;</span>
                 </div>
               </div>
             </div>
@@ -220,28 +222,28 @@ export const HeroSection: React.FC = () => {
 
         {/* Floating Quick Stats */}
         <div className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-          <div className="p-4 sm:p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md">
-            <div className="text-2xl sm:text-3xl font-extrabold text-white">99.999%</div>
-            <div className="text-xs sm:text-sm text-cyan-400 font-medium">Uptime Guarantee</div>
-            <div className="text-[11px] text-slate-400 mt-1">Multi-cloud active-active failover</div>
+          <div className="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-all">
+            <div className="text-2xl sm:text-3xl font-extrabold text-slate-900">99.999%</div>
+            <div className="text-xs sm:text-sm text-blue-600 font-semibold">Uptime Guarantee</div>
+            <div className="text-[11px] text-slate-500 mt-1">Multi-cloud active-active failover</div>
           </div>
 
-          <div className="p-4 sm:p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md">
-            <div className="text-2xl sm:text-3xl font-extrabold text-white">18x</div>
-            <div className="text-xs sm:text-sm text-blue-400 font-medium">Deployment Velocity</div>
-            <div className="text-[11px] text-slate-400 mt-1">Automated GitOps & CI/CD pipelines</div>
+          <div className="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-all">
+            <div className="text-2xl sm:text-3xl font-extrabold text-slate-900">18x</div>
+            <div className="text-xs sm:text-sm text-indigo-600 font-semibold">Deployment Velocity</div>
+            <div className="text-[11px] text-slate-500 mt-1">Automated GitOps & CI/CD pipelines</div>
           </div>
 
-          <div className="p-4 sm:p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md">
-            <div className="text-2xl sm:text-3xl font-extrabold text-white">45%+</div>
-            <div className="text-xs sm:text-sm text-emerald-400 font-medium">Cloud FinOps Reduction</div>
-            <div className="text-[11px] text-slate-400 mt-1">Guaranteed cloud waste elimination</div>
+          <div className="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-all">
+            <div className="text-2xl sm:text-3xl font-extrabold text-slate-900">45%+</div>
+            <div className="text-xs sm:text-sm text-emerald-600 font-semibold">Cloud FinOps Reduction</div>
+            <div className="text-[11px] text-slate-500 mt-1">Guaranteed cloud waste elimination</div>
           </div>
 
-          <div className="p-4 sm:p-5 rounded-2xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-md">
-            <div className="text-2xl sm:text-3xl font-extrabold text-white">Top 1%</div>
-            <div className="text-xs sm:text-sm text-indigo-400 font-medium">Senior Tech Talent</div>
-            <div className="text-[11px] text-slate-400 mt-1">Silicon Valley & Global architects</div>
+          <div className="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-all">
+            <div className="text-2xl sm:text-3xl font-extrabold text-slate-900">Top 1%</div>
+            <div className="text-xs sm:text-sm text-sky-600 font-semibold">Senior Tech Talent</div>
+            <div className="text-[11px] text-slate-500 mt-1">Silicon Valley & Global architects</div>
           </div>
         </div>
       </div>
@@ -253,3 +255,4 @@ export const HeroSection: React.FC = () => {
     </section>
   );
 };
+

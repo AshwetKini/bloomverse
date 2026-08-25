@@ -12,16 +12,16 @@ export const metadata: Metadata = {
 
 export default function CaseStudiesPage() {
   return (
-    <div className="pt-24 pb-20 bg-[#07090e]">
+    <div className="pt-24 pb-20 bg-white">
       {/* Subpage Banner */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-4">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-semibold uppercase tracking-wider mb-4">
           <Sparkles className="w-3.5 h-3.5" /> Proven Track Record
         </div>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight">
           Enterprise Case Studies & Architecture Teardowns
         </h1>
-        <p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto mt-4">
+        <p className="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto mt-4">
           Real-world outcomes: 72% latency reductions, zero-downtime multi-region migrations, and private clinical AI engines.
         </p>
       </div>
@@ -34,15 +34,15 @@ export default function CaseStudiesPage() {
 
       {/* Bottom CTA */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 text-center">
-        <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-blue-950/60 via-slate-900 to-indigo-950/60 border border-slate-800 space-y-4">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white">Have an Upcoming Architecture Initiative?</h2>
-          <p className="text-slate-400 text-sm max-w-lg mx-auto">
+        <div className="p-8 sm:p-12 rounded-3xl bg-slate-50 border border-slate-200 space-y-4 shadow-sm">
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">Have an Upcoming Architecture Initiative?</h2>
+          <p className="text-slate-600 text-sm max-w-lg mx-auto">
             Book a direct discovery session with our senior engineers to review technical requirements and budget feasibility.
           </p>
           <div className="pt-2">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white font-semibold text-sm shadow-xl shadow-blue-500/25 transition-all"
+              className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-700 hover:to-sky-700 text-white font-semibold text-sm shadow-md shadow-blue-500/20 transition-all active:scale-[0.98]"
             >
               <span>Schedule Technical Consultation</span>
               <ArrowRight className="w-4 h-4" />

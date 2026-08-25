@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #07090e;
-  --foreground: #f8fafc;
+  --background: #ffffff;
+  --foreground: #0f172a;
 }
 
 body {
@@ -21,16 +21,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #07090e;
+  background: #f8fafc;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1e293b;
+  background: #cbd5e1;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #334155;
+  background: #94a3b8;
 }
 
 /* Utilities */
@@ -50,3 +50,4 @@ body {
 .animate-pulse-slow {
   animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
