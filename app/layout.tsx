@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
+import { ScrollObserver } from '@/components/ui/ScrollObserver';
 
 export const metadata: Metadata = {
   title: 'Bloomverse | Enterprise IT Services, Cloud Architecture & Applied AI',
@@ -52,6 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className="bg-white text-slate-900 antialiased min-h-screen flex flex-col selection:bg-blue-600 selection:text-white">
+        <ScrollObserver />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

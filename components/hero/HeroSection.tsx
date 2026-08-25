@@ -83,7 +83,7 @@ export const HeroSection: React.FC = () => {
 
           {/* Right Hero Interactive Tech Console */}
           <div className="lg:col-span-5">
-            <div className="relative rounded-2xl bg-[#0f172a] border border-slate-800 shadow-2xl shadow-slate-400/20 overflow-hidden">
+            <div className="relative rounded-2xl bg-[#0f172a] border border-slate-800 shadow-2xl shadow-slate-400/20 overflow-hidden animate-subtle-float">
               {/* Window Titlebar */}
               <div className="flex items-center justify-between px-4 py-3 border-b border-slate-800 bg-[#090d16]">
                 <div className="flex items-center gap-2">

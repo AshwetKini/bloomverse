@@ -16,12 +16,12 @@ export const TestimonialsSection: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4 reveal-on-scroll">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5" /> Client Endorsements
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
-            Trusted by CTOs, VPs of Engineering & Enterprise Leaders
+            Trusted by CTOs, VPs of Engineering &amp; Enterprise Leaders
           </h2>
           <p className="text-slate-600 text-base sm:text-lg">
             See how engineering leaders rate their collaboration with Bloomverse across mission-critical software and cloud initiatives.
@@ -30,10 +30,10 @@ export const TestimonialsSection: React.FC = () => {
 
         {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-16">
-          {testimonialsData.map((item) => (
+          {testimonialsData.map((item, idx) => (
             <div
               key={item.id}
-              className="p-7 sm:p-8 rounded-2xl bg-white border border-slate-200 hover:border-blue-400 hover:shadow-lg transition-all duration-300 flex flex-col justify-between shadow-sm"
+              className={`p-7 sm:p-8 rounded-2xl bg-white border border-slate-200 hover:border-blue-400 hover:shadow-lg transition-all duration-300 flex flex-col justify-between shadow-sm hover-lift reveal-on-scroll delay-${idx * 150 + 100}`}
             >
               <div>
                 {/* Rating Stars & Project Type */}

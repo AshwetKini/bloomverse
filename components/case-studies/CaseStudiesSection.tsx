@@ -22,7 +22,7 @@ export const CaseStudiesSection: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4 reveal-on-scroll">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-semibold uppercase tracking-wider">
             <TrendingUp className="w-3.5 h-3.5" /> Proven Enterprise Impact
           </div>
@@ -36,10 +36,10 @@ export const CaseStudiesSection: React.FC = () => {
 
         {/* Case Studies Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {caseStudiesData.map((study) => (
+          {caseStudiesData.map((study, idx) => (
             <div
               key={study.id}
-              className="group rounded-2xl bg-white border border-slate-200/90 hover:border-blue-500/50 p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-slate-200/70 overflow-hidden"
+              className={`group rounded-2xl bg-white border border-slate-200/90 hover:border-blue-500/50 p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-slate-200/70 overflow-hidden hover-lift reveal-on-scroll delay-${(idx % 2) * 150 + 100}`}
             >
               <div>
                 {/* Image Banner */}
