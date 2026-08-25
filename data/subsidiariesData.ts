@@ -4,6 +4,7 @@ export interface SubsidiaryCompany {
   domain: string;
   url: string;
   tagline: string;
+  logo?: string;
   description: string;
   relationship: string;
   foundedYear: string;
@@ -23,19 +24,21 @@ export const subsidiaryCompanies: SubsidiaryCompany[] = [
     name: 'TeenHusstle',
     domain: 'teenhusstle.com',
     url: 'https://teenhusstle.com',
-    tagline: 'Empowering the Next Gen Workforce & Youth Skill Economy',
+    tagline: 'Learn, Teach, Buy & Sell Digital Services Online',
+    logo: '/images/teenhustle-logo.png',
     description:
-      'TeenHusstle is a specialized digital ecosystem and micro-gig marketplace enabling young talent to develop digital skills, gain early workforce experience, and access structured career opportunities.',
-    relationship: 'Wholly-Owned Subsidiary & Venture Brand',
+      'TeenHusstle (teenhusstle.com) is a wholly-owned consumer digital marketplace subsidiary of Bloomverse. It empowers student freelancers and teen creators to monetize skills, offer freelance gigs (UI/UX design, video editing, web development), trade digital products in the MarketSpace, and connect with global buyers and tutors through secure milestone payouts.',
+    relationship: 'Wholly-Owned Child Company & Consumer Venture',
     foundedYear: '2024',
-    category: 'EdTech & Workforce Marketplace',
+    category: 'Freelance & Digital Products Marketplace',
     status: 'Wholly-Owned Subsidiary',
     metrics: [
-      { label: 'Market Segment', value: 'Youth Workforce & Skill Economy' },
-      { label: 'Operating Model', value: 'Wholly-Owned Subsidiary' },
-      { label: 'Corporate Parent', value: 'Bloomverse Technologies Inc.' }
+      { label: 'Corporate Status', value: 'Wholly-Owned Subsidiary of Bloomverse' },
+      { label: 'Core Offerings', value: 'HustleHub Gigs & MarketSpace Marketplace' },
+      { label: 'Platform Focus', value: 'Freelancing, Digital Goods & P2P Tutoring' },
+      { label: 'Escrow & Security', value: 'Milestone-Based Payout Protection' }
     ],
-    techStack: ['Next.js', 'React', 'Node.js', 'PostgreSQL', 'TailwindCSS'],
+    techStack: ['Next.js App Router', 'React 19', 'Node.js', 'PostgreSQL', 'TailwindCSS', 'Razorpay'],
     razorpayCompliant: true
   }
 ];
