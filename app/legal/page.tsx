@@ -31,17 +31,45 @@ export default function LegalPage() {
           </div>
 
           {/* Header */}
-          <div className="space-y-4 mb-12 border-b border-slate-200 pb-8">
+          <div className="space-y-4 mb-8 border-b border-slate-200 pb-8">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold uppercase tracking-wider">
               <ShieldCheck className="w-4 h-4 text-emerald-600" />
-              <span>Razorpay & Corporate Compliance</span>
+              <span>Corporate Compliance &amp; Entity Hierarchy</span>
             </div>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-              Legal Disclosures & Merchant Identity
+              Legal Disclosures &amp; Merchant Identity
             </h1>
             <p className="text-slate-600 text-sm sm:text-base max-w-3xl leading-relaxed">
               Official corporate hierarchy, domain ownership declarations, and payment gateway onboarding disclosures for Bloomverse Technologies Inc. and its subsidiary digital ventures.
             </p>
+
+            {/* Legal Documents Navigation */}
+            <div className="flex flex-wrap gap-2 pt-4">
+              <Link
+                href="/legal"
+                className="px-3.5 py-1.5 rounded-xl bg-blue-600 text-white text-xs font-semibold shadow-xs"
+              >
+                Corporate Hierarchy
+              </Link>
+              <Link
+                href="/privacy"
+                className="px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold transition-colors"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/terms"
+                className="px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold transition-colors"
+              >
+                Terms of Service
+              </Link>
+              <Link
+                href="/merchant"
+                className="px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold transition-colors"
+              >
+                Merchant &amp; Razorpay Policy
+              </Link>
+            </div>
           </div>
 
           {/* Grid Layout */}
