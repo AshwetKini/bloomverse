@@ -7,7 +7,6 @@ import { officeLocations } from '@/data/companyData';
 import { 
   ArrowRight, 
   CheckCircle2, 
-  ShieldCheck, 
   MapPin, 
   Github, 
   Twitter, 
@@ -167,40 +166,6 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Subsidiary & Group Company Notice Banner */}
-        <div className="p-4 rounded-xl bg-blue-50/70 border border-blue-200/80 mb-6 flex flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center gap-2.5 text-xs text-slate-700">
-            <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse shrink-0" />
-            <span>
-              <strong className="text-slate-900">Corporate Group Disclosure:</strong>{' '}
-              <a href="https://teenhusstle.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-semibold">
-                TeenHusstle (teenhusstle.com)
-              </a>{' '}
-              is a wholly-owned subsidiary brand & platform of Bloomverse Technologies Inc.
-            </span>
-          </div>
-          <Link
-            href="/legal"
-            className="text-xs text-blue-700 hover:text-blue-800 font-semibold bg-white border border-blue-200 px-3 py-1.5 rounded-lg hover:border-blue-300 transition-colors shadow-sm"
-          >
-            Corporate Disclosures & Filings &rarr;
-          </Link>
-        </div>
-
-        {/* Security & Compliance Banner */}
-        <div className="p-4 rounded-xl bg-white border border-slate-200 mb-10 flex flex-wrap items-center justify-between gap-4 shadow-sm">
-          <div className="flex items-center gap-2.5 text-xs text-slate-700">
-            <ShieldCheck className="w-5 h-5 text-emerald-600 shrink-0" />
-            <span>
-              <strong className="text-slate-900">Enterprise Security Guarantee:</strong> All infrastructure and codebases are SOC2 Type II, ISO 27001, HIPAA & GDPR compliant.
-            </span>
-          </div>
-          <div className="flex items-center gap-3 text-xs font-mono text-slate-600">
-            <span className="px-2 py-0.5 rounded bg-slate-100 border border-slate-200 font-medium">SOC2 Type II</span>
-            <span className="px-2 py-0.5 rounded bg-slate-100 border border-slate-200 font-medium">ISO 27001</span>
-            <span className="px-2 py-0.5 rounded bg-slate-100 border border-slate-200 font-medium">HIPAA</span>
-          </div>
-        </div>
-
         {/* Bottom Bar */}
         <div className="pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
