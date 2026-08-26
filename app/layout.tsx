@@ -5,6 +5,7 @@ import { Footer } from '@/components/layout/Footer';
 import { ScrollObserver } from '@/components/ui/ScrollObserver';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://bloomverse.com'),
   title: 'Bloomverse | Enterprise IT Services, Cloud Architecture & Applied AI',
   description: 'Bloomverse (bloomverse.com) is the premier digital engineering firm providing enterprise cloud infrastructure, autonomous AI systems, custom software development, and zero-trust cybersecurity.',
   keywords: [
@@ -21,6 +22,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Bloomverse Technologies Inc.' }],
   creator: 'Bloomverse Technologies',
+  icons: {
+    icon: '/images/logo-icon.png',
+    shortcut: '/favicon.ico',
+    apple: '/images/logo-icon.png',
+  },
   openGraph: {
     title: 'Bloomverse | Next-Gen Enterprise IT & Applied AI Engineering',
     description: 'Hyper-scalable cloud systems, bespoke software, fine-tuned AI models, and dedicated agile engineering squads.',
@@ -28,10 +34,10 @@ export const metadata: Metadata = {
     siteName: 'Bloomverse',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop',
+        url: '/images/logo-banner.png',
         width: 1200,
-        height: 630,
-        alt: 'Bloomverse Enterprise IT Services',
+        height: 250,
+        alt: 'Bloomverse Enterprise IT & AI',
       },
     ],
     locale: 'en_US',
@@ -41,7 +47,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Bloomverse | Enterprise IT & Applied AI Systems',
     description: 'Next-Gen IT solutions, cloud architecture, and AI systems built for 99.999% uptime.',
-    images: ['https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop'],
+    images: ['/images/logo-banner.png'],
   },
 };
 
