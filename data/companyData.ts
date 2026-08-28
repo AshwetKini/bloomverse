@@ -9,12 +9,19 @@ export interface OfficeLocation {
 
 export const officeLocations: OfficeLocation[] = [
   {
+    city: 'Pune',
+    country: 'India',
+    address: '98/1001, Gateway Towers, Amanora Park Town, Hadapsar, Pune - 411028',
+    phone: '+91 80 4912 8800',
+    email: 'contact@bloomverse.com',
+    isHQ: true
+  },
+  {
     city: 'San Francisco',
     country: 'United States',
     address: '500 Howard Street, Suite 400, San Francisco, CA 94105',
     phone: '+1 (415) 890-3420',
-    email: 'sf@bloomverse.com',
-    isHQ: true
+    email: 'sf@bloomverse.com'
   },
   {
     city: 'London',
@@ -29,13 +36,6 @@ export const officeLocations: OfficeLocation[] = [
     address: 'Marina Bay Financial Centre Tower 1, 8 Marina Blvd, Singapore 018981',
     phone: '+65 6712 3490',
     email: 'apac@bloomverse.com'
-  },
-  {
-    city: 'Bangalore',
-    country: 'India',
-    address: 'Embassy GolfLinks Tech Park, Intermediate Ring Rd, Bengaluru 560071',
-    phone: '+91 80 4912 8800',
-    email: 'india@bloomverse.com'
   }
 ];
 

@@ -158,7 +158,7 @@ export const Footer: React.FC = () => {
               ))}
               <div className="pt-1">
                 <Link href="/contact" className="text-xs text-blue-600 hover:text-blue-700 font-semibold">
-                  View Singapore & Bangalore Hubs &rarr;
+                  View All Global Hubs &rarr;
                 </Link>
               </div>
             </div>

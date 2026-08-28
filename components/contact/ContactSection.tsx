@@ -7,7 +7,8 @@ import {
   Mail, 
   Clock, 
   Send, 
-  MessageSquare 
+  MessageSquare,
+  MapPin 
 } from 'lucide-react';
 
 export const ContactSection: React.FC = () => {
@@ -190,12 +191,22 @@ export const ContactSection: React.FC = () => {
                 </a>
 
                 <div className="flex items-center gap-3.5 p-3.5 rounded-2xl bg-slate-50/80 border border-slate-200/80 text-slate-700">
+                  <div className="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center shrink-0 border border-purple-100">
+                    <MapPin className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <div className="text-[11px] text-slate-500 font-medium">Headquarters / Registered Office</div>
+                    <div className="font-bold text-slate-900 text-xs leading-snug">98/1001, Gateway Towers, Amanora Park Town, Hadapsar, Pune - 411028</div>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-3.5 p-3.5 rounded-2xl bg-slate-50/80 border border-slate-200/80 text-slate-700">
                   <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 border border-emerald-100">
                     <Clock className="w-4 h-4" />
                   </div>
                   <div>
                     <div className="text-[11px] text-slate-500 font-medium">Operating Hours</div>
-                    <div className="font-bold text-slate-900 text-xs">Mon &ndash; Fri (9:00 AM &ndash; 6:00 PM)</div>
+                    <div className="font-bold text-slate-900 text-xs">Mon &ndash; Fri (9:00 AM &ndash; 6:00 PM IST)</div>
                   </div>
                 </div>
               </div>
