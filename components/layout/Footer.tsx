@@ -142,23 +142,24 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Company & Offices Column */}
+          {/* Corporate Office Column */}
           <div className="space-y-3">
-            <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">Global Hubs</h4>
+            <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider">Corporate Office</h4>
             <div className="space-y-3 text-xs">
-              {officeLocations.slice(0, 2).map((loc) => (
+              {officeLocations.map((loc) => (
                 <div key={loc.city} className="border-l-2 border-slate-200 pl-3">
                   <div className="text-slate-900 font-semibold flex items-center gap-1">
-                    <MapPin className="w-3 h-3 text-blue-600" />
+                    <MapPin className="w-3 h-3 text-blue-600 shrink-0" />
                     <span>{loc.city}, {loc.country}</span>
                     {loc.isHQ && <span className="text-[10px] bg-blue-50 text-blue-700 border border-blue-200 px-1 rounded font-medium">HQ</span>}
                   </div>
-                  <div className="text-slate-500 text-[11px] mt-0.5">{loc.phone}</div>
+                  <div className="text-slate-500 text-[11px] mt-0.5 leading-relaxed">{loc.address}</div>
+                  <div className="text-blue-600 text-[11px] mt-0.5">{loc.email}</div>
                 </div>
               ))}
               <div className="pt-1">
                 <Link href="/contact" className="text-xs text-blue-600 hover:text-blue-700 font-semibold">
-                  View All Global Hubs &rarr;
+                  Contact Office &rarr;
                 </Link>
               </div>
             </div>

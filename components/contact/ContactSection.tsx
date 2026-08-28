@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import { 
   CheckCircle2, 
-  Phone, 
   Mail, 
   Clock, 
   Send, 
@@ -174,19 +173,6 @@ export const ContactSection: React.FC = () => {
                   <div>
                     <div className="text-[11px] text-slate-500 font-medium">Email Us Directly</div>
                     <div className="font-bold text-slate-900 text-sm">contact@bloomverse.com</div>
-                  </div>
-                </a>
-
-                <a 
-                  href="tel:+14158903420" 
-                  className="flex items-center gap-3.5 p-3.5 rounded-2xl bg-slate-50/80 border border-slate-200/80 hover:border-blue-300 hover:bg-blue-50/20 text-slate-700 hover:text-blue-600 transition-all"
-                >
-                  <div className="w-10 h-10 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center shrink-0 border border-sky-100">
-                    <Phone className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <div className="text-[11px] text-slate-500 font-medium">Phone Support</div>
-                    <div className="font-bold text-slate-900 text-sm">+1 (415) 890-3420</div>
                   </div>
                 </a>
 

@@ -81,7 +81,7 @@ export default function LegalPage() {
                 <h2 className="text-xl font-bold text-slate-900">1. Corporate Legal Entity & Parent Company</h2>
               </div>
               <p className="text-sm text-slate-700 leading-relaxed">
-                <strong className="text-slate-900 font-semibold">Bloomverse Technologies Inc.</strong> (along with its global registered entities and operational hubs) is the sole parent legal entity governing all associated digital platforms, custom software products, and subsidiary business units.
+                <strong className="text-slate-900 font-semibold">Bloomverse Technologies Inc.</strong> (with its registered corporate headquarters in Pune, India) is the sole parent legal entity governing all associated digital platforms, custom software products, and subsidiary business units.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-3">
                 <div className="p-4 rounded-xl bg-white border border-slate-200 space-y-1 shadow-sm">
