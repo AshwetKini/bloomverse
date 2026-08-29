@@ -10,7 +10,7 @@ interface LogoProps {
   size?: 'sm' | 'md' | 'lg';
 }
 
-export const bloomversLogo: React.FC<LogoProps> = ({ 
+export const BloomversLogo: React.FC<LogoProps> = ({ 
   className = '', 
   showTagline = false,
   size = 'md' 
@@ -47,5 +47,3 @@ export const bloomversLogo: React.FC<LogoProps> = ({
     </Link>
   );
 };
-
-
