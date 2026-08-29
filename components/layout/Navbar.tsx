@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { bloomversLogo } from '../ui/bloomversLogo';
+import { BloomversLogo } from '../ui/BloomversLogo';
 import { ConsultationModal } from '../contact/ConsultationModal';
 import { 
   Menu, 
@@ -16,7 +16,7 @@ import {
   ShieldCheck, 
   Database, 
   Users, 
-  ArrowRight,
+  ArrowRight, 
   Calculator
 } from 'lucide-react';
 
@@ -47,7 +47,7 @@ export const Navbar: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <bloomversLogo showTagline={true} />
+            <BloomversLogo showTagline={true} />
 
             {/* Desktop Navigation Links */}
             <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5">

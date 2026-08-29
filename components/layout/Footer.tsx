@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { bloomversLogo } from '../ui/bloomversLogo';
+import { BloomversLogo } from '../ui/BloomversLogo';
 import { officeLocations } from '@/data/companyData';
 import { 
   ArrowRight, 
@@ -34,7 +34,7 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 mb-14">
           {/* Brand & Newsletter Column */}
           <div className="lg:col-span-2 space-y-5">
-            <bloomversLogo showTagline={true} />
+            <BloomversLogo showTagline={true} />
             <p className="text-slate-600 text-sm max-w-sm leading-relaxed">
               bloomvers is the premier digital engineering and enterprise cloud partner. We architect resilient systems, fine-tune AI foundation models, and deploy dedicated engineering squads worldwide.
             </p>
