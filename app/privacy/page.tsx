@@ -41,7 +41,7 @@ export default function PrivacyPolicyPage() {
               Privacy Policy
             </h1>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              This Privacy Policy explains how Bloomverse Technologies Inc. (&ldquo;Bloomverse&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) and our wholly-owned subsidiary platforms (including TeenHusstle at teenhusstle.com) collect, use, disclose, and safeguard your personal information.
+              This Privacy Policy explains how bloomvers Technologies Inc. (&ldquo;bloomvers&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) and our wholly-owned subsidiary platforms (including TeenHusstle at teenhusstle.com) collect, use, disclose, and safeguard your personal information.
             </p>
           </div>
 
@@ -87,7 +87,7 @@ export default function PrivacyPolicyPage() {
                 We only share personal information with vetted third-party vendors who adhere to strict confidentiality and security standards:
               </p>
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2 text-xs">
-                <div><strong className="text-slate-900">Payment Gateway (Razorpay):</strong> Transactions initiated on bloomverse.com or teenhusstle.com are processed through Razorpay Payments under PCI-DSS Level 1 compliant protocols. Payment data is encrypted end-to-end.</div>
+                <div><strong className="text-slate-900">Payment Gateway (Razorpay):</strong> Transactions initiated on bloomvers.com or teenhusstle.com are processed through Razorpay Payments under PCI-DSS Level 1 compliant protocols. Payment data is encrypted end-to-end.</div>
                 <div><strong className="text-slate-900">Cloud Infrastructure (AWS / GCP / Cloudflare):</strong> Client data and platform services are hosted in enterprise-tier, SOC2 Type II certified cloud environments with automated encryption at rest and in transit.</div>
               </div>
             </section>
@@ -125,8 +125,8 @@ export default function PrivacyPolicyPage() {
                 If you have questions regarding this Privacy Policy or wish to exercise your data protection rights, please contact our Data Protection Officer:
               </p>
               <div className="text-xs space-y-1">
-                <div><strong className="text-slate-900">Entity:</strong> Bloomverse Technologies Inc.</div>
-                <div><strong className="text-slate-900">Privacy Desk Email:</strong> <a href="mailto:privacy@bloomverse.com" className="text-blue-600 hover:underline">privacy@bloomverse.com</a></div>
+                <div><strong className="text-slate-900">Entity:</strong> bloomvers Technologies Inc.</div>
+                <div><strong className="text-slate-900">Privacy Desk Email:</strong> <a href="mailto:privacy@bloomvers.com" className="text-blue-600 hover:underline">privacy@bloomvers.com</a></div>
                 <div><strong className="text-slate-900">Subsidiary Brand Desk:</strong> <a href="mailto:support@teenhusstle.com" className="text-blue-600 hover:underline">support@teenhusstle.com</a></div>
               </div>
             </section>

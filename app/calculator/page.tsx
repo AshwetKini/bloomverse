@@ -4,7 +4,7 @@ import { ProjectEstimator } from '@/components/calculator/ProjectEstimator';
 import { Sparkles } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Project Scope & Cost Estimator | Bloomverse',
+  title: 'Project Scope & Cost Estimator | bloomvers',
   description: 'Interactive IT project cost calculator. Estimate timeline, budget, and squad allocation for cloud migrations, AI implementations, and custom web applications.',
 };
 

@@ -93,7 +93,7 @@ export const ConsultationModal: React.FC<ModalProps> = ({ isOpen, onClose, initi
                 <Sparkles className="w-3.5 h-3.5" /> Book Technical Discovery Call
               </div>
               <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
-                Architect Your Solution with Bloomverse
+                Architect Your Solution with bloomvers
               </h2>
               <p className="text-sm text-slate-600 mt-1">
                 Direct consultation with a Senior IT Architect. Non-disclosure protected.

@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { BloomverseLogo } from '../ui/BloomverseLogo';
+import { bloomversLogo } from '../ui/bloomversLogo';
 import { ConsultationModal } from '../contact/ConsultationModal';
 import { 
   Menu, 
@@ -47,7 +47,7 @@ export const Navbar: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <BloomverseLogo showTagline={true} />
+            <bloomversLogo showTagline={true} />
 
             {/* Desktop Navigation Links */}
             <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5">
@@ -268,7 +268,7 @@ export const Navbar: React.FC = () => {
               onClick={() => setMobileMenuOpen(false)}
               className="block py-2 text-base font-semibold text-slate-800 hover:text-blue-600"
             >
-              About Bloomverse
+              About bloomvers
             </Link>
             <Link
               href="/contact"

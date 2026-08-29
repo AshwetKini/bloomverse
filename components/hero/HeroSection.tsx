@@ -44,7 +44,7 @@ export const HeroSection: React.FC = () => {
                 Enterprise Cloud, DevOps & Applied AI Systems
               </span>
               <span className="text-slate-300 hidden sm:inline">&bull;</span>
-              <span className="text-slate-500 font-mono hidden sm:inline">bloomverse.com</span>
+              <span className="text-slate-500 font-mono hidden sm:inline">bloomvers.com</span>
             </div>
 
             {/* Main Headline */}
@@ -58,7 +58,7 @@ export const HeroSection: React.FC = () => {
 
             {/* Subtitle */}
             <p className="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed mx-auto lg:mx-0">
-              Bloomverse provides end-to-end cloud infrastructure, autonomous AI agents, bespoke software engineering, and zero-trust cybersecurity for organizations demanding non-negotiable speed and 99.999% reliability.
+              bloomvers provides end-to-end cloud infrastructure, autonomous AI agents, bespoke software engineering, and zero-trust cybersecurity for organizations demanding non-negotiable speed and 99.999% reliability.
             </p>
 
             {/* Action Buttons */}
@@ -90,7 +90,7 @@ export const HeroSection: React.FC = () => {
                   <div className="w-3 h-3 rounded-full bg-rose-500" />
                   <div className="w-3 h-3 rounded-full bg-amber-500" />
                   <div className="w-3 h-3 rounded-full bg-emerald-500" />
-                  <span className="text-xs text-slate-400 font-mono ml-2">bloomverse-core-engine</span>
+                  <span className="text-xs text-slate-400 font-mono ml-2">bloomvers-core-engine</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
@@ -163,7 +163,7 @@ export const HeroSection: React.FC = () => {
                     <div className="text-slate-500">// Terraform multi-region deployment</div>
                     <div className="text-emerald-400">&gt; terraform apply -auto-approve</div>
                     <div className="text-slate-400 text-[11px] space-y-1 pl-2">
-                      <div>&bull; aws_eks_cluster.bloomverse_mesh: Created</div>
+                      <div>&bull; aws_eks_cluster.bloomvers_mesh: Created</div>
                       <div>&bull; argocd_application.fintech_service: Synced</div>
                       <div>&bull; cloudflare_waf_rule.zero_trust: Applied</div>
                     </div>

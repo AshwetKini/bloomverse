@@ -54,7 +54,7 @@ export default function MerchantPage() {
               Merchant Information &amp; Payment Policies
             </h1>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Official merchant onboarding declarations, payment processor integration terms (Razorpay), billing statement identification, and consumer refund policies for Bloomverse Technologies Inc. and its subsidiary brands.
+              Official merchant onboarding declarations, payment processor integration terms (Razorpay), billing statement identification, and consumer refund policies for bloomvers Technologies Inc. and its subsidiary brands.
             </p>
           </div>
 
@@ -67,12 +67,12 @@ export default function MerchantPage() {
                 <h2 className="text-lg font-bold text-slate-900">1. Legal Merchant Entity &amp; Ownership</h2>
               </div>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                All commercial payment processing accounts and merchant facilities operated across <span className="font-semibold text-slate-900">bloomverse.com</span> and <span className="font-semibold text-blue-600">teenhusstle.com</span> are legally registered under and underwritten by:
+                All commercial payment processing accounts and merchant facilities operated across <span className="font-semibold text-slate-900">bloomvers.com</span> and <span className="font-semibold text-blue-600">teenhusstle.com</span> are legally registered under and underwritten by:
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200">
                   <span className="text-[11px] text-slate-500 font-semibold uppercase block">Registered Merchant Entity</span>
-                  <p className="text-sm font-bold text-slate-900 mt-0.5">Bloomverse Technologies Inc.</p>
+                  <p className="text-sm font-bold text-slate-900 mt-0.5">bloomvers Technologies Inc.</p>
                 </div>
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200">
                   <span className="text-[11px] text-slate-500 font-semibold uppercase block">Registered Headquarters</span>
@@ -88,7 +88,7 @@ export default function MerchantPage() {
                 <h2 className="text-lg font-bold text-slate-900">2. Payment Gateway Integration &amp; Security Standards</h2>
               </div>
               <p>
-                Bloomverse utilizes <strong>Razorpay Payments</strong> as our primary authorized payment gateway partner for processing digital invoices, credit cards, debit cards, UPI, net banking, and international card payments:
+                bloomvers utilizes <strong>Razorpay Payments</strong> as our primary authorized payment gateway partner for processing digital invoices, credit cards, debit cards, UPI, net banking, and international card payments:
               </p>
               <div className="space-y-3">
                 <div className="p-4 rounded-xl bg-white border border-slate-200 shadow-xs space-y-1 text-xs">
@@ -97,7 +97,7 @@ export default function MerchantPage() {
                     Depending on the platform where your order or invoice was initiated, transactions processed by Razorpay will appear on your credit card or bank account statements as:
                   </p>
                   <div className="flex flex-wrap gap-2 pt-1 font-mono text-[11px]">
-                    <span className="px-2.5 py-1 rounded bg-blue-50 text-blue-700 border border-blue-200 font-semibold">RAZORPAY * BLOOMVERSE</span>
+                    <span className="px-2.5 py-1 rounded bg-blue-50 text-blue-700 border border-blue-200 font-semibold">RAZORPAY * bloomvers</span>
                     <span className="px-2.5 py-1 rounded bg-pink-50 text-pink-700 border border-pink-200 font-semibold">RAZORPAY * TEENHUSSTLE</span>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ export default function MerchantPage() {
                 <h2 className="text-lg font-bold text-slate-900">3. Pricing Transparency &amp; Digital Fulfillment</h2>
               </div>
               <p>
-                All pricing across Bloomverse enterprise services and TeenHusstle digital offerings is displayed transparently prior to checkout:
+                All pricing across bloomvers enterprise services and TeenHusstle digital offerings is displayed transparently prior to checkout:
               </p>
               <ul className="list-disc list-inside space-y-2 pl-2 text-slate-600">
                 <li><strong className="text-slate-900">Enterprise Engineering Deliverables:</strong> Delivered digitally through secure version-controlled git repositories (GitHub / GitLab) and private staging cloud deployments per milestone schedules.</li>
@@ -161,8 +161,8 @@ export default function MerchantPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-1">
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200">
                   <span className="text-[11px] text-slate-500 font-semibold block">Parent Billing Desk</span>
-                  <a href="mailto:billing@bloomverse.com" className="font-bold text-slate-900 hover:text-blue-600 transition-colors">
-                    billing@bloomverse.com
+                  <a href="mailto:billing@bloomvers.com" className="font-bold text-slate-900 hover:text-blue-600 transition-colors">
+                    billing@bloomvers.com
                   </a>
                 </div>
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200">

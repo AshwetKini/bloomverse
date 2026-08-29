@@ -26,7 +26,7 @@ export default function LegalPage() {
               href="/"
               className="inline-flex items-center gap-2 text-xs font-semibold text-slate-500 hover:text-blue-600 transition-colors"
             >
-              <ArrowLeft className="w-3.5 h-3.5" /> Back to Bloomverse Home
+              <ArrowLeft className="w-3.5 h-3.5" /> Back to bloomvers Home
             </Link>
           </div>
 
@@ -40,7 +40,7 @@ export default function LegalPage() {
               Legal Disclosures &amp; Merchant Identity
             </h1>
             <p className="text-slate-600 text-sm sm:text-base max-w-3xl leading-relaxed">
-              Official corporate hierarchy, domain ownership declarations, and payment gateway onboarding disclosures for Bloomverse Technologies Inc. and its subsidiary digital ventures.
+              Official corporate hierarchy, domain ownership declarations, and payment gateway onboarding disclosures for bloomvers Technologies Inc. and its subsidiary digital ventures.
             </p>
 
             {/* Legal Documents Navigation */}
@@ -81,12 +81,12 @@ export default function LegalPage() {
                 <h2 className="text-xl font-bold text-slate-900">1. Corporate Legal Entity & Parent Company</h2>
               </div>
               <p className="text-sm text-slate-700 leading-relaxed">
-                <strong className="text-slate-900 font-semibold">Bloomverse Technologies Inc.</strong> (with its registered corporate headquarters in Pune, India) is the sole parent legal entity governing all associated digital platforms, custom software products, and subsidiary business units.
+                <strong className="text-slate-900 font-semibold">bloomvers Technologies Inc.</strong> (with its registered corporate headquarters in Pune, India) is the sole parent legal entity governing all associated digital platforms, custom software products, and subsidiary business units.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-3">
                 <div className="p-4 rounded-xl bg-white border border-slate-200 space-y-1 shadow-sm">
                   <span className="text-xs text-slate-500 uppercase font-semibold">Registered Entity Name</span>
-                  <p className="text-sm font-bold text-slate-900">Bloomverse Technologies Inc.</p>
+                  <p className="text-sm font-bold text-slate-900">bloomvers Technologies Inc.</p>
                 </div>
                 <div className="p-4 rounded-xl bg-white border border-slate-200 space-y-1 shadow-sm">
                   <span className="text-xs text-slate-500 uppercase font-semibold">Headquarters Address</span>
@@ -102,7 +102,7 @@ export default function LegalPage() {
                 <h2 className="text-xl font-bold text-slate-900">2. Subsidiary Brand Ownership: TeenHusstle</h2>
               </div>
               <p className="text-sm text-slate-700 leading-relaxed">
-                This legal notice explicitly affirms that <strong className="text-blue-600 font-semibold">TeenHusstle (teenhusstle.com)</strong> is a wholly-owned subsidiary brand and digital platform operating under the corporate umbrella of <strong className="text-slate-900 font-semibold">Bloomverse Technologies Inc.</strong>
+                This legal notice explicitly affirms that <strong className="text-blue-600 font-semibold">TeenHusstle (teenhusstle.com)</strong> is a wholly-owned subsidiary brand and digital platform operating under the corporate umbrella of <strong className="text-slate-900 font-semibold">bloomvers Technologies Inc.</strong>
               </p>
 
               {subsidiaryCompanies.map((sub) => (
@@ -124,7 +124,7 @@ export default function LegalPage() {
                   </div>
                   <p className="text-xs text-slate-600 leading-relaxed">{sub.description}</p>
                   <div className="text-xs text-slate-600 border-t border-slate-100 pt-3">
-                    <strong className="text-slate-800">Corporate Authorization Note:</strong> All business contracts, service level agreements (SLAs), platform terms, and merchant transactions conducted under the domain <span className="text-blue-600 font-mono font-medium">teenhusstle.com</span> are legally underwritten by Bloomverse Technologies Inc.
+                    <strong className="text-slate-800">Corporate Authorization Note:</strong> All business contracts, service level agreements (SLAs), platform terms, and merchant transactions conducted under the domain <span className="text-blue-600 font-mono font-medium">teenhusstle.com</span> are legally underwritten by bloomvers Technologies Inc.
                   </div>
                 </div>
               ))}
@@ -137,12 +137,12 @@ export default function LegalPage() {
                 <h2 className="text-xl font-bold text-slate-900">3. Payment Gateway & Merchant Compliance (Razorpay)</h2>
               </div>
               <p className="text-sm text-slate-700 leading-relaxed">
-                All financial transactions, micro-subscriptions, and invoice payments initiated on <span className="text-slate-900 font-semibold">teenhusstle.com</span> or <span className="text-slate-900 font-semibold">bloomverse.com</span> are processed using PCI-DSS Level 1 compliant payment partners, primarily <strong className="text-slate-900">Razorpay Payments</strong>.
+                All financial transactions, micro-subscriptions, and invoice payments initiated on <span className="text-slate-900 font-semibold">teenhusstle.com</span> or <span className="text-slate-900 font-semibold">bloomvers.com</span> are processed using PCI-DSS Level 1 compliant payment partners, primarily <strong className="text-slate-900">Razorpay Payments</strong>.
               </p>
               
               <ul className="space-y-2 text-xs sm:text-sm text-slate-700 list-disc list-inside bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
-                <li><strong className="text-slate-900">Bank Statement Identifier:</strong> Charges processed for TeenHusstle may appear as <span className="text-blue-600 font-mono font-medium">RAZORPAY * TEENHUSSTLE</span> or <span className="text-blue-600 font-mono font-medium">RAZORPAY * BLOOMVERSE</span> on customer card and bank statements.</li>
-                <li><strong className="text-slate-900">Domain Authorization:</strong> Razorpay Risk & Onboarding audits recognize <span className="text-slate-800 font-medium">teenhusstle.com</span> as a verified merchant property of Bloomverse Technologies Inc.</li>
+                <li><strong className="text-slate-900">Bank Statement Identifier:</strong> Charges processed for TeenHusstle may appear as <span className="text-blue-600 font-mono font-medium">RAZORPAY * TEENHUSSTLE</span> or <span className="text-blue-600 font-mono font-medium">RAZORPAY * bloomvers</span> on customer card and bank statements.</li>
+                <li><strong className="text-slate-900">Domain Authorization:</strong> Razorpay Risk & Onboarding audits recognize <span className="text-slate-800 font-medium">teenhusstle.com</span> as a verified merchant property of bloomvers Technologies Inc.</li>
                 <li><strong className="text-slate-900">Security Standard:</strong> 256-bit SSL Encryption, 3D-Secure 2.0 Auth, and Automated Fraud Detection.</li>
               </ul>
             </section>
@@ -163,8 +163,8 @@ export default function LegalPage() {
                     <Mail className="w-3.5 h-3.5 text-blue-600" />
                     <span>Parent Corporate Legal Email</span>
                   </div>
-                  <a href="mailto:legal@bloomverse.com" className="text-sm font-semibold text-slate-900 hover:text-blue-600 transition-colors">
-                    legal@bloomverse.com
+                  <a href="mailto:legal@bloomvers.com" className="text-sm font-semibold text-slate-900 hover:text-blue-600 transition-colors">
+                    legal@bloomvers.com
                   </a>
                 </div>
 

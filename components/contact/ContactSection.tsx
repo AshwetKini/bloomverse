@@ -164,7 +164,7 @@ export const ContactSection: React.FC = () => {
               
               <div className="space-y-3.5 text-xs">
                 <a 
-                  href="mailto:contact@bloomverse.com" 
+                  href="mailto:contact@bloomvers.com" 
                   className="flex items-center gap-3.5 p-3.5 rounded-2xl bg-slate-50/80 border border-slate-200/80 hover:border-blue-300 hover:bg-blue-50/20 text-slate-700 hover:text-blue-600 transition-all"
                 >
                   <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 border border-blue-100">
@@ -172,7 +172,7 @@ export const ContactSection: React.FC = () => {
                   </div>
                   <div>
                     <div className="text-[11px] text-slate-500 font-medium">Email Us Directly</div>
-                    <div className="font-bold text-slate-900 text-sm">contact@bloomverse.com</div>
+                    <div className="font-bold text-slate-900 text-sm">contact@bloomvers.com</div>
                   </div>
                 </a>
 

@@ -6,8 +6,8 @@ import { Sparkles, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Enterprise Case Studies & Proof of Impact | Bloomverse',
-  description: 'Read how Bloomverse helped FinTech, Healthcare, E-Commerce, and SaaS leaders achieve 99.999% uptime, \.4M+ cost reductions, and rapid SOC2 certifications.',
+  title: 'Enterprise Case Studies & Proof of Impact | bloomvers',
+  description: 'Read how bloomvers helped FinTech, Healthcare, E-Commerce, and SaaS leaders achieve 99.999% uptime, \.4M+ cost reductions, and rapid SOC2 certifications.',
 };
 
 export default function CaseStudiesPage() {

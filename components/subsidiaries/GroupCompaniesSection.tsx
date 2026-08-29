@@ -32,7 +32,7 @@ export const GroupCompaniesSection: React.FC = () => {
               Our Child Company &amp; Consumer Venture
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Bloomverse incubates, architects, and powers high-growth digital platforms alongside our enterprise consulting division. TeenHusstle operates as our premier wholly-owned child company.
+              bloomvers incubates, architects, and powers high-growth digital platforms alongside our enterprise consulting division. TeenHusstle operates as our premier wholly-owned child company.
             </p>
           </div>
 

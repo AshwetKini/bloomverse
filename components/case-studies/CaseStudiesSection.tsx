@@ -171,7 +171,7 @@ export const CaseStudiesSection: React.FC = () => {
 
               {/* Solution */}
               <div className="space-y-2">
-                <h4 className="text-xs font-bold text-emerald-700 uppercase tracking-wider">The Bloomverse Engineered Solution</h4>
+                <h4 className="text-xs font-bold text-emerald-700 uppercase tracking-wider">The bloomvers Engineered Solution</h4>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed p-4 rounded-xl bg-emerald-50 border border-emerald-200">
                   {selectedCase.solution}
                 </p>

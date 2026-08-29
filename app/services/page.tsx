@@ -7,14 +7,14 @@ import { Sparkles, HelpCircle, CheckCircle2, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Enterprise IT Services & Solutions | Bloomverse',
-  description: 'Explore Bloomverse full-stack IT capabilities: Cloud Architecture, Applied AI & Autonomous Agents, Custom Enterprise Software, Zero-Trust Cybersecurity, and Modern Data Stacks.',
+  title: 'Enterprise IT Services & Solutions | bloomvers',
+  description: 'Explore bloomvers full-stack IT capabilities: Cloud Architecture, Applied AI & Autonomous Agents, Custom Enterprise Software, Zero-Trust Cybersecurity, and Modern Data Stacks.',
 };
 
 export default function ServicesPage() {
   const faqs = [
     {
-      q: 'How fast can a Bloomverse engineering team onboard and deploy?',
+      q: 'How fast can a bloomvers engineering team onboard and deploy?',
       a: 'Dedicated pods and agile squads can be provisioned and integrated into your Jira/Slack workspace within 7 business days, with full security clearances and NDA sign-off.'
     },
     {

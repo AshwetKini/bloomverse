@@ -10,7 +10,7 @@ interface LogoProps {
   size?: 'sm' | 'md' | 'lg';
 }
 
-export const BloomverseLogo: React.FC<LogoProps> = ({ 
+export const bloomversLogo: React.FC<LogoProps> = ({ 
   className = '', 
   showTagline = false,
   size = 'md' 
@@ -23,13 +23,13 @@ export const BloomverseLogo: React.FC<LogoProps> = ({
     <Link 
       href="/" 
       className={`group inline-flex items-center gap-3 transition-transform duration-200 hover:opacity-95 active:scale-[0.99] ${className}`}
-      aria-label="Bloomverse Home"
+      aria-label="bloomvers Home"
     >
       {/* Sleek Dark Emblem Capsule for the Official Logo */}
       <div className={`relative ${heightClass} px-3 py-1.5 bg-black rounded-xl border border-slate-800 shadow-sm flex items-center justify-center group-hover:border-lime-500/40 group-hover:shadow-md group-hover:shadow-lime-500/10 transition-all duration-300`}>
         <Image
           src="/images/logo-banner.png"
-          alt="Bloomverse Logo"
+          alt="bloomvers Logo"
           width={imgWidth}
           height={imgHeight}
           className="h-full w-auto object-contain"

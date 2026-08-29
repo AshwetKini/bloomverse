@@ -5,12 +5,12 @@ import { Footer } from '@/components/layout/Footer';
 import { ScrollObserver } from '@/components/ui/ScrollObserver';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://bloomverse.com'),
-  title: 'Bloomverse | Enterprise IT Services, Cloud Architecture & Applied AI',
-  description: 'Bloomverse (bloomverse.com) is the premier digital engineering firm providing enterprise cloud infrastructure, autonomous AI systems, custom software development, and zero-trust cybersecurity.',
+  metadataBase: new URL('https://bloomvers.com'),
+  title: 'bloomvers | Enterprise IT Services, Cloud Architecture & Applied AI',
+  description: 'bloomvers (bloomvers.com) is the premier digital engineering firm providing enterprise cloud infrastructure, autonomous AI systems, custom software development, and zero-trust cybersecurity.',
   keywords: [
-    'Bloomverse',
-    'bloomverse.com',
+    'bloomvers',
+    'bloomvers.com',
     'Enterprise IT Services',
     'Cloud Migration',
     'Kubernetes DevOps',
@@ -20,24 +20,24 @@ export const metadata: Metadata = {
     'Cybersecurity SOC2',
     'Dedicated Engineering Pods'
   ],
-  authors: [{ name: 'Bloomverse Technologies Inc.' }],
-  creator: 'Bloomverse Technologies',
+  authors: [{ name: 'bloomvers Technologies Inc.' }],
+  creator: 'bloomvers Technologies',
   icons: {
     icon: '/images/logo-icon.png',
     shortcut: '/favicon.ico',
     apple: '/images/logo-icon.png',
   },
   openGraph: {
-    title: 'Bloomverse | Next-Gen Enterprise IT & Applied AI Engineering',
+    title: 'bloomvers | Next-Gen Enterprise IT & Applied AI Engineering',
     description: 'Hyper-scalable cloud systems, bespoke software, fine-tuned AI models, and dedicated agile engineering squads.',
-    url: 'https://bloomverse.com',
-    siteName: 'Bloomverse',
+    url: 'https://bloomvers.com',
+    siteName: 'bloomvers',
     images: [
       {
         url: '/images/logo-banner.png',
         width: 1200,
         height: 250,
-        alt: 'Bloomverse Enterprise IT & AI',
+        alt: 'bloomvers Enterprise IT & AI',
       },
     ],
     locale: 'en_US',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Bloomverse | Enterprise IT & Applied AI Systems',
+    title: 'bloomvers | Enterprise IT & Applied AI Systems',
     description: 'Next-Gen IT solutions, cloud architecture, and AI systems built for 99.999% uptime.',
     images: ['/images/logo-banner.png'],
   },
