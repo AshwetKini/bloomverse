@@ -12,7 +12,7 @@ export const officeLocations: OfficeLocation[] = [
     city: 'Pune',
     country: 'India',
     address: '98/1001, Gateway Towers, Amanora Park Town, Hadapsar, Pune - 411028',
-    email: 'contact@bloomverse.com',
+    email: 'contact@bloomvers.com',
     isHQ: true
   }
 ];

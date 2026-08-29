@@ -55,7 +55,7 @@ export const AboutSection: React.FC = () => {
               Engineering with Silicon Valley Speed &amp; Enterprise Rigor.
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Bloomverse was founded to eliminate the sluggishness, bloat, and technical compromises of legacy IT consulting. We partner with forward-thinking organizations, scaleups, and digital brands to design, build, and deploy software that stands the test of scale.
+              bloomvers was founded to eliminate the sluggishness, bloat, and technical compromises of legacy IT consulting. We partner with forward-thinking organizations, scaleups, and digital brands to design, build, and deploy software that stands the test of scale.
             </p>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
               Whether building autonomous AI agent workflows, migrating mission-critical workloads to multi-cloud Kubernetes, or engineering high-throughput SaaS platforms, our squads write clean, production-grade code designed to perform.
@@ -66,7 +66,7 @@ export const AboutSection: React.FC = () => {
             <div className="p-8 rounded-3xl bg-slate-50 border border-slate-200/90 shadow-sm space-y-6">
               <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2.5">
                 <Workflow className="w-5 h-5 text-blue-600" />
-                The Bloomverse Difference
+                The bloomvers Difference
               </h3>
               
               <div className="space-y-4">

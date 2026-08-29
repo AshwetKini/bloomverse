@@ -18,7 +18,7 @@ export const testimonialsData: Testimonial[] = [
     company: 'Apex Global Financial',
     avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop',
     rating: 5,
-    content: 'Bloomverse is hands-down the most elite engineering partner we have ever collaborated with. Their team restructured our entire multi-region Kubernetes infrastructure with zero downtime during peak market hours. Truly world-class architects.',
+    content: 'bloomvers is hands-down the most elite engineering partner we have ever collaborated with. Their team restructured our entire multi-region Kubernetes infrastructure with zero downtime during peak market hours. Truly world-class architects.',
     projectType: 'Cloud & Kubernetes Migration',
     metric: '72% Latency Drop'
   },
@@ -29,7 +29,7 @@ export const testimonialsData: Testimonial[] = [
     company: 'OmniHealth Intelligence',
     avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop',
     rating: 5,
-    content: 'The custom RAG and autonomous AI agent platform developed by Bloomverse transformed how our clinicians extract insights from millions of clinical research papers. Their deep knowledge in LLMs and HIPAA data privacy is unmatched.',
+    content: 'The custom RAG and autonomous AI agent platform developed by bloomvers transformed how our clinicians extract insights from millions of clinical research papers. Their deep knowledge in LLMs and HIPAA data privacy is unmatched.',
     projectType: 'Applied AI & RAG Engine',
     metric: '99.2% Search Precision'
   },
@@ -40,7 +40,7 @@ export const testimonialsData: Testimonial[] = [
     company: 'Velox Retail Systems',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop',
     rating: 5,
-    content: 'Our peak holiday flash sale generated over \ without a single dropped cart or server stutter. Bloomverse redesigned our Next.js frontend and microservices to handle over 150,000 concurrent buyers effortlessly.',
+    content: 'Our peak holiday flash sale generated over \ without a single dropped cart or server stutter. bloomvers redesigned our Next.js frontend and microservices to handle over 150,000 concurrent buyers effortlessly.',
     projectType: 'Next.js & Cloud Scaling',
     metric: '38% Conversion Boost'
   },
@@ -51,7 +51,7 @@ export const testimonialsData: Testimonial[] = [
     company: 'VaultLogic Security',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop',
     rating: 5,
-    content: 'When we needed SOC 2 Type II compliance to unlock Tier-1 banking clients, Bloomverse came in, automated our DevSecOps posture, and passed the audit on the first attempt in under 60 days. Invaluable partner.',
+    content: 'When we needed SOC 2 Type II compliance to unlock Tier-1 banking clients, bloomvers came in, automated our DevSecOps posture, and passed the audit on the first attempt in under 60 days. Invaluable partner.',
     projectType: 'Zero-Trust Cybersecurity',
     metric: '100% Audit Pass'
   }

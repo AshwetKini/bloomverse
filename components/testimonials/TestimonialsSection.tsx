@@ -24,7 +24,7 @@ export const TestimonialsSection: React.FC = () => {
             Trusted by CTOs, VPs of Engineering &amp; Enterprise Leaders
           </h2>
           <p className="text-slate-600 text-base sm:text-lg">
-            See how engineering leaders rate their collaboration with Bloomverse across mission-critical software and cloud initiatives.
+            See how engineering leaders rate their collaboration with bloomvers across mission-critical software and cloud initiatives.
           </p>
         </div>
 

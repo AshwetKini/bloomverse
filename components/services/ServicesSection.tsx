@@ -56,7 +56,7 @@ export const ServicesSection: React.FC = () => {
             High-Performance IT Engineering for Modern Enterprises
           </h2>
           <p className="text-slate-600 text-base sm:text-lg">
-            From zero-downtime multi-cloud migrations to proprietary AI agent workflows, Bloomverse builds the technical backbone that powers hyper-growth.
+            From zero-downtime multi-cloud migrations to proprietary AI agent workflows, bloomvers builds the technical backbone that powers hyper-growth.
           </p>
         </div>
 

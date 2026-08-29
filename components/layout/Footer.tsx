@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { BloomverseLogo } from '../ui/BloomverseLogo';
+import { bloomversLogo } from '../ui/bloomversLogo';
 import { officeLocations } from '@/data/companyData';
 import { 
   ArrowRight, 
@@ -34,9 +34,9 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 mb-14">
           {/* Brand & Newsletter Column */}
           <div className="lg:col-span-2 space-y-5">
-            <BloomverseLogo showTagline={true} />
+            <bloomversLogo showTagline={true} />
             <p className="text-slate-600 text-sm max-w-sm leading-relaxed">
-              Bloomverse is the premier digital engineering and enterprise cloud partner. We architect resilient systems, fine-tune AI foundation models, and deploy dedicated engineering squads worldwide.
+              bloomvers is the premier digital engineering and enterprise cloud partner. We architect resilient systems, fine-tune AI foundation models, and deploy dedicated engineering squads worldwide.
             </p>
 
             {/* Newsletter Subscription */}
@@ -170,7 +170,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
-            &copy; {new Date().getFullYear()} Bloomverse Technologies Inc. All rights reserved. Registered domains: <span className="text-slate-800 font-mono font-medium">bloomverse.com</span> & <span className="text-blue-600 font-mono font-medium">teenhusstle.com</span>
+            &copy; {new Date().getFullYear()} bloomvers Technologies Inc. All rights reserved. Registered domains: <span className="text-slate-800 font-mono font-medium">bloomvers.com</span> & <span className="text-blue-600 font-mono font-medium">teenhusstle.com</span>
           </div>
           <div className="flex flex-wrap items-center gap-4 sm:gap-6">
             <Link href="/privacy" className="hover:text-slate-900 transition-colors">Privacy Policy</Link>

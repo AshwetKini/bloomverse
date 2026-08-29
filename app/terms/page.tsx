@@ -41,7 +41,7 @@ export default function TermsOfServicePage() {
               Terms of Service
             </h1>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              These Terms of Service (&ldquo;Terms&rdquo;) govern access to and use of digital engineering services, consulting deliverables, and subsidiary digital properties provided by Bloomverse Technologies Inc. (&ldquo;Bloomverse&rdquo;).
+              These Terms of Service (&ldquo;Terms&rdquo;) govern access to and use of digital engineering services, consulting deliverables, and subsidiary digital properties provided by bloomvers Technologies Inc. (&ldquo;bloomvers&rdquo;).
             </p>
           </div>
 
@@ -53,7 +53,7 @@ export default function TermsOfServicePage() {
                 <Shield className="w-4 h-4 text-blue-600" /> 1. Acceptance of Terms
               </h2>
               <p>
-                By accessing bloomverse.com, engaging Bloomverse for software architecture or engineering services, executing a Statement of Work (SOW), or utilizing our subsidiary properties (including teenhusstle.com), you agree to be bound by these Terms. If you are entering into these Terms on behalf of an enterprise or entity, you represent that you hold the legal authority to bind that entity.
+                By accessing bloomvers.com, engaging bloomvers for software architecture or engineering services, executing a Statement of Work (SOW), or utilizing our subsidiary properties (including teenhusstle.com), you agree to be bound by these Terms. If you are entering into these Terms on behalf of an enterprise or entity, you represent that you hold the legal authority to bind that entity.
               </p>
             </section>
 
@@ -63,11 +63,11 @@ export default function TermsOfServicePage() {
                 <Code2 className="w-4 h-4 text-blue-600" /> 2. Scope of Services &amp; Intellectual Property Transfer
               </h2>
               <p>
-                Bloomverse provides enterprise custom software engineering, cloud infrastructure architecture, applied AI integration, and dedicated agile engineering squads.
+                bloomvers provides enterprise custom software engineering, cloud infrastructure architecture, applied AI integration, and dedicated agile engineering squads.
               </p>
               <ul className="list-disc list-inside space-y-1.5 pl-2 text-slate-600">
                 <li><strong className="text-slate-900">Custom Deliverables &amp; IP Ownership:</strong> Upon full payment of agreed project invoices or milestone fees, 100% of bespoke source code, documentation, and tailored architectural assets transfer exclusively to the client.</li>
-                <li><strong className="text-slate-900">Pre-existing Frameworks:</strong> Bloomverse retains ownership of proprietary internal tools, boilerplates, and open-source packages utilized to accelerate development, granting clients a perpetual, royalty-free, worldwide license to use them within the delivered solution.</li>
+                <li><strong className="text-slate-900">Pre-existing Frameworks:</strong> bloomvers retains ownership of proprietary internal tools, boilerplates, and open-source packages utilized to accelerate development, granting clients a perpetual, royalty-free, worldwide license to use them within the delivered solution.</li>
               </ul>
             </section>
 
@@ -87,7 +87,7 @@ export default function TermsOfServicePage() {
                 <Scale className="w-4 h-4 text-blue-600" /> 4. Subsidiary Operations (TeenHusstle)
               </h2>
               <p>
-                Bloomverse operates <strong>TeenHusstle (teenhusstle.com)</strong> as its consumer marketplace subsidiary. Users participating in freelance gigs, tutoring, or digital asset commerce on TeenHusstle agree to comply with platform community guidelines, escrow milestone release rules, and youth-protection safety policies.
+                bloomvers operates <strong>TeenHusstle (teenhusstle.com)</strong> as its consumer marketplace subsidiary. Users participating in freelance gigs, tutoring, or digital asset commerce on TeenHusstle agree to comply with platform community guidelines, escrow milestone release rules, and youth-protection safety policies.
               </p>
             </section>
 
@@ -97,7 +97,7 @@ export default function TermsOfServicePage() {
                 <AlertTriangle className="w-4 h-4 text-amber-600" /> 5. Limitation of Liability &amp; Warranty
               </h2>
               <p>
-                Except as expressly stated in a written Service Level Agreement (SLA), services are provided on an &ldquo;as-is&rdquo; and &ldquo;as-available&rdquo; basis. To the maximum extent permitted by law, Bloomverse shall not be liable for indirect, incidental, consequential, or punitive damages arising from platform downtime, third-party cloud outages, or project delays beyond reasonable control.
+                Except as expressly stated in a written Service Level Agreement (SLA), services are provided on an &ldquo;as-is&rdquo; and &ldquo;as-available&rdquo; basis. To the maximum extent permitted by law, bloomvers shall not be liable for indirect, incidental, consequential, or punitive damages arising from platform downtime, third-party cloud outages, or project delays beyond reasonable control.
               </p>
             </section>
 
@@ -107,11 +107,11 @@ export default function TermsOfServicePage() {
                 <HelpCircle className="w-4 h-4 text-blue-600" /> 6. Governing Law &amp; Legal Notices
               </h2>
               <p className="text-xs text-slate-600 leading-relaxed">
-                These Terms shall be governed by and construed in accordance with the laws governing commercial business operations of Bloomverse Technologies Inc. For formal legal notices or contractual inquiries, contact:
+                These Terms shall be governed by and construed in accordance with the laws governing commercial business operations of bloomvers Technologies Inc. For formal legal notices or contractual inquiries, contact:
               </p>
               <div className="text-xs space-y-1">
-                <div><strong className="text-slate-900">Corporate Legal Desk:</strong> <a href="mailto:legal@bloomverse.com" className="text-blue-600 hover:underline">legal@bloomverse.com</a></div>
-                <div><strong className="text-slate-900">Official Website:</strong> bloomverse.com</div>
+                <div><strong className="text-slate-900">Corporate Legal Desk:</strong> <a href="mailto:legal@bloomvers.com" className="text-blue-600 hover:underline">legal@bloomvers.com</a></div>
+                <div><strong className="text-slate-900">Official Website:</strong> bloomvers.com</div>
               </div>
             </section>
           </div>
