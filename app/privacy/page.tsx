@@ -126,7 +126,7 @@ export default function PrivacyPolicyPage() {
               </p>
               <div className="text-xs space-y-1">
                 <div><strong className="text-slate-900">Entity:</strong> bloomvers Technologies Inc.</div>
-                <div><strong className="text-slate-900">Privacy Desk Email:</strong> <a href="mailto:privacy@bloomvers.com" className="text-blue-600 hover:underline">privacy@bloomvers.com</a></div>
+                <div><strong className="text-slate-900">Privacy Desk Email:</strong> <a href="mailto:support@bloomvers.com" className="text-blue-600 hover:underline">support@bloomvers.com</a></div>
                 <div><strong className="text-slate-900">Subsidiary Brand Desk:</strong> <a href="mailto:support@teenhusstle.com" className="text-blue-600 hover:underline">support@teenhusstle.com</a></div>
               </div>
             </section>

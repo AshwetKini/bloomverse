@@ -163,8 +163,8 @@ export default function LegalPage() {
                     <Mail className="w-3.5 h-3.5 text-blue-600" />
                     <span>Parent Corporate Legal Email</span>
                   </div>
-                  <a href="mailto:legal@bloomvers.com" className="text-sm font-semibold text-slate-900 hover:text-blue-600 transition-colors">
-                    legal@bloomvers.com
+                  <a href="mailto:support@bloomvers.com" className="text-sm font-semibold text-slate-900 hover:text-blue-600 transition-colors">
+                    support@bloomvers.com
                   </a>
                 </div>
 

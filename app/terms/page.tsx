@@ -110,7 +110,7 @@ export default function TermsOfServicePage() {
                 These Terms shall be governed by and construed in accordance with the laws governing commercial business operations of bloomvers Technologies Inc. For formal legal notices or contractual inquiries, contact:
               </p>
               <div className="text-xs space-y-1">
-                <div><strong className="text-slate-900">Corporate Legal Desk:</strong> <a href="mailto:legal@bloomvers.com" className="text-blue-600 hover:underline">legal@bloomvers.com</a></div>
+                <div><strong className="text-slate-900">Corporate Legal Desk:</strong> <a href="mailto:support@bloomvers.com" className="text-blue-600 hover:underline">support@bloomvers.com</a></div>
                 <div><strong className="text-slate-900">Official Website:</strong> bloomvers.com</div>
               </div>
             </section>

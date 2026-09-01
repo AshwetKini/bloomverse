@@ -161,8 +161,8 @@ export default function MerchantPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-1">
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200">
                   <span className="text-[11px] text-slate-500 font-semibold block">Parent Billing Desk</span>
-                  <a href="mailto:billing@bloomvers.com" className="font-bold text-slate-900 hover:text-blue-600 transition-colors">
-                    billing@bloomvers.com
+                  <a href="mailto:support@bloomvers.com" className="font-bold text-slate-900 hover:text-blue-600 transition-colors">
+                    support@bloomvers.com
                   </a>
                 </div>
                 <div className="p-3.5 rounded-xl bg-white border border-slate-200">
