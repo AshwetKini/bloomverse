@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import { caseStudiesData, CaseStudy } from '@/data/caseStudiesData';
 import { 
   ArrowRight, 
-  TrendingUp, 
   Quote, 
   X,
   Sparkles
@@ -15,25 +14,17 @@ export const CaseStudiesSection: React.FC = () => {
   const [selectedCase, setSelectedCase] = useState<CaseStudy | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
 
+  // Only render if there are case studies
+  if (caseStudiesData.length === 0) {
+    return null;
+  }
+
   return (
     <section id="case-studies" className="py-24 bg-slate-50/70 relative overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-10 right-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4 reveal-on-scroll">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-semibold uppercase tracking-wider">
-            <TrendingUp className="w-3.5 h-3.5" /> Proven Enterprise Impact
-          </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
-            Engineering Transformations that Deliver Multi-Million Dollar ROI
-          </h2>
-          <p className="text-slate-600 text-base sm:text-lg">
-            Explore how we partnered with industry leaders to overcome high-concurrency hurdles, accelerate cloud velocity, and deploy breakthrough AI systems.
-          </p>
-        </div>
-
         {/* Case Studies Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {caseStudiesData.map((study, idx) => (
