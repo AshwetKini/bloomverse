@@ -172,7 +172,7 @@ export const ContactSection: React.FC = () => {
                   </div>
                   <div>
                     <div className="text-[11px] text-slate-500 font-medium">Email Us Directly</div>
-                    <div className="font-bold text-slate-900 text-sm">contact@bloomvers.com</div>
+                    <div className="font-bold text-slate-900 text-sm"> support@bloomvers.com</div>
                   </div>
                 </a>
 
